@@ -15,6 +15,7 @@ export const Projects = () => {
           <h3
             style={{ marginTop: isNavFixed ? "142px" : "80px" }}
             className="subtitle animate__animated animate__fadeIn"
+            data-testid="projects-subtitle"
           >
             PROJECTS
           </h3>
