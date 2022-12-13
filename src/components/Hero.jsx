@@ -1,13 +1,14 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import Col from "react-bootstrap/Col";
 import bg from "../assets/pc-bg.webp";
+import { AppContext } from "../context";
 
 export const Hero = () => {
-  const [bgHeight, setBgHeight] = useState(0);
+  const { headerHeight, setHeaderHeight } = useContext(AppContext);
   const header = useRef();
 
   useEffect(() => {
-    setBgHeight(header.current.offsetHeight);
+    setHeaderHeight(header.current.offsetHeight);
   }, [header]);
 
   return (
@@ -27,7 +28,7 @@ export const Hero = () => {
       <h2 className="subtitle col-12 mt-1 mb-5">Frontend Developer</h2>
 
       <img
-        style={{ height: `${bgHeight}px` }}
+        style={{ height: `${headerHeight}px` }}
         src={bg}
         alt="background"
         className="pc-bg"
