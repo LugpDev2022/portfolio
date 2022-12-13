@@ -27,7 +27,9 @@ export const AppNavbar = () => {
     <Navbar bg="dark" variant="dark" expand="md" fixed={isFixed && "top"}>
       <Container>
         <Navbar.Brand className="fw-bold">
-          {isFixed ? "Luis Alberto Cervantes García" : "LugpDev2022"}
+          <a href="#me" className="custom-brand">
+            {isFixed ? "Luis Cervantes " : "LugpDev2022"}
+          </a>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

@@ -31,11 +31,24 @@ body {
 .custom-link {
   color: white;
   font-size: 1.2em;
+  text-transform: uppercase;
 
   &:hover {
-    text-decoration: underline !important;
-    color: white !important;
+    color: #255880 !important;
   }
+}
+
+.custom-brand {
+  color: white;
+  text-decoration: none !important;
+
+  font-size: 1.2em;
+
+  &:hover {
+    color: #255880 !important;
+  }
+
+  transition: 200ms;
 }
 
 .pc-bg {

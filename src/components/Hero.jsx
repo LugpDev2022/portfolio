@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import Col from "react-bootstrap/Col";
 import bg from "../assets/pc-bg.webp";
 import { AppContext } from "../context";
@@ -24,7 +24,7 @@ export const Hero = () => {
 
   return (
     //TODO: Change the profile image
-    <header ref={header} className="row">
+    <header ref={header} className="row" id="me">
       <Col xs={12} className="text-center mb-4 mt-5">
         <img
           src="http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSe7vU6RlwDwFL44J6xtBdRmmqhQRg4FQYYKi0VwxV7h1v5Erv1-jiqfGxHEG9e9b8y2IfQ7INlB_IjzUMT-yg"
