@@ -1,14 +1,11 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
+import Hero from "./components/Hero";
 
 function App() {
   return (
-    <Container>
-      <Row>
-        <Col>
-          <h1>Portfolio</h1>
-        </Col>
-      </Row>
+    <Container fluid>
+      <Hero />
     </Container>
   );
 }
