@@ -29,14 +29,16 @@ export const Hero = () => {
         <img
           src="http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSe7vU6RlwDwFL44J6xtBdRmmqhQRg4FQYYKi0VwxV7h1v5Erv1-jiqfGxHEG9e9b8y2IfQ7INlB_IjzUMT-yg"
           alt="profile image"
-          className="my-img"
+          className="my-img animate__animated animate__fadeInDown"
         />
       </Col>
-      <h1 className="title col-12 mt-3">
+      <h1 className="title col-12 mt-3 animate__animated animate__fadeInDown">
         <span>Luis Alberto&nbsp;</span>
         <span>Cervantes García</span>
       </h1>
-      <h2 className="subtitle col-12 mt-1 mb-5">Frontend Developer</h2>
+      <h2 className="subtitle col-12 mt-1 mb-5 animate__animated animate__fadeInDown">
+        Frontend Developer
+      </h2>
 
       <img
         style={{ height: `${headerHeight}px` }}
