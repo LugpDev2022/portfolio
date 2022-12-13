@@ -28,6 +28,16 @@ body {
   max-width: 200px;
 }
 
+.custom-link {
+  color: white;
+  font-size: 1.2em;
+
+  &:hover {
+    text-decoration: underline !important;
+    color: white !important;
+  }
+}
+
 .pc-bg {
   position: absolute;
   z-index: -1;

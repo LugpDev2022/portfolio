@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Col from "react-bootstrap/Col";
 import bg from "../assets/pc-bg.webp";
 
-const Hero = () => {
+export const Hero = () => {
   const [bgHeight, setBgHeight] = useState(0);
   const header = useRef();
 
@@ -35,5 +35,3 @@ const Hero = () => {
     </header>
   );
 };
-
-export default Hero;
