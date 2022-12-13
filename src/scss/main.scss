@@ -9,21 +9,28 @@ body {
 }
 
 .title {
-  font-weight: bold;
-  font-size: 1.9em;
-  text-align: center;
   display: flex;
   flex-flow: wrap row;
+  font-size: 1.9em;
+  font-weight: bold;
   justify-content: center;
+  text-align: center;
 }
 
 .subtitle {
-  font-weight: 700;
   font-size: 1.6em;
+  font-weight: 700;
   text-align: center;
 }
 
 .my-img {
-  max-width: 200px;
   border-radius: 100%;
+  max-width: 200px;
+}
+
+.pc-bg {
+  position: absolute;
+  z-index: -1;
+  padding: 0px !important;
+  filter: blur(15px);
 }
