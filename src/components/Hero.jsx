@@ -11,6 +11,17 @@ export const Hero = () => {
     setHeaderHeight(header.current.offsetHeight);
   }, [header]);
 
+  //TODO: Apply a best solution
+  useEffect(() => {
+    setTimeout(() => {
+      const newHeight = header.current.offsetHeight;
+
+      if (newHeight !== headerHeight) {
+        setHeaderHeight(newHeight);
+      }
+    }, 300);
+  }, []);
+
   return (
     //TODO: Change the profile image
     <header ref={header} className="row">

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { AppContext } from "./AppContext";
 
 export const ContextProvider = ({ children }) => {
-  const [headerHeight, setHeaderHeight] = useState(0);
+  const [headerHeight, setHeaderHeight] = useState();
 
   const value = {
     headerHeight,

@@ -1,23 +1,33 @@
-import React from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { AppContext } from "../context";
 
 export const AppNavbar = () => {
-  /*
-  setInterval(() => {
-    if (window.scrollY >= heroHeight) {
+  const [isFixed, setIsFixed] = useState(false);
+  const { headerHeight } = useContext(AppContext);
+  const [scroll, setScroll] = useState();
+
+  useEffect(() => {
+    window.addEventListener("scroll", checkScroll);
+
+    if (window.scrollY >= headerHeight) {
       setIsFixed(true);
       return;
     }
-
     setIsFixed(false);
-  }, 1);
-  */
+
+    return () => window.removeEventListener("scroll", checkScroll);
+  }, [scroll]);
+
+  const checkScroll = () => {
+    setScroll(window.scrollY);
+  };
 
   return (
-    <Navbar bg="dark" variant="dark" expand="md">
+    <Navbar bg="dark" variant="dark" expand="md" fixed={isFixed && "top"}>
       <Container>
         <Navbar.Brand className="fw-bold">
-          Luis Alberto Cervantes García
+          {isFixed ? "Luis Alberto Cervantes García" : "LugpDev2022"}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
