@@ -5,18 +5,17 @@ import Navbar from "react-bootstrap/Navbar";
 import { AppContext } from "../context";
 
 export const AppNavbar = () => {
-  const [isFixed, setIsFixed] = useState(false);
-  const { headerHeight } = useContext(AppContext);
+  const { headerHeight, isNavFixed, setIsNavFixed } = useContext(AppContext);
   const [scroll, setScroll] = useState();
 
   useEffect(() => {
     window.addEventListener("scroll", checkScroll);
 
-    if (window.scrollY >= headerHeight) {
-      setIsFixed(true);
+    if (window.scrollY > headerHeight) {
+      setIsNavFixed(true);
       return;
     }
-    setIsFixed(false);
+    setIsNavFixed(false);
 
     return () => window.removeEventListener("scroll", checkScroll);
   }, [scroll]);
@@ -26,11 +25,11 @@ export const AppNavbar = () => {
   };
 
   return (
-    <Navbar bg="dark" variant="dark" expand="md" fixed={isFixed && "top"}>
+    <Navbar bg="dark" variant="dark" expand="md" fixed={isNavFixed && "top"}>
       <Container>
         <Navbar.Brand className="fw-bold">
           <a href="#me" className="custom-brand">
-            {isFixed ? "Luis Cervantes " : "LugpDev2022"}
+            {isNavFixed ? "Luis Cervantes " : "@LugpDev2022"}
           </a>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
