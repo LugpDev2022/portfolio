@@ -1,8 +1,8 @@
-import TimeAppSS from "./TimeAppSS.webp";
-import CalculatorAppSS from "./CalculatorAppSS.webp";
-import NotFoundPage from "./404PageSS.webp";
-import TodoAppSS from "./TodoAppSS.webp";
-import AdviceGeneratorSS from "./AdviceGeneratorSS.webp";
+import TimeAppSS from "./images/TimeAppSS.webp";
+import CalculatorAppSS from "./images/CalculatorAppSS.webp";
+import NotFoundPage from "./images/404PageSS.webp";
+import TodoAppSS from "./images/TodoAppSS.webp";
+import AdviceGeneratorSS from "./images/AdviceGeneratorSS.webp";
 
 const projects = [
   {

@@ -1,6 +1,6 @@
 import { useContext, useEffect, useRef } from "react";
 import Col from "react-bootstrap/Col";
-import bg from "../assets/pc-bg.webp";
+import bg from "../assets/images/pc-bg.webp";
 import { AppContext } from "../context";
 
 export const Hero = () => {
