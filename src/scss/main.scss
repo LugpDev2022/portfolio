@@ -65,3 +65,10 @@ body {
   padding: 0px !important;
   filter: blur(15px);
 }
+
+.custom-modal {
+  div > div {
+    background: #255880;
+    border-radius: 7px;
+  }
+}

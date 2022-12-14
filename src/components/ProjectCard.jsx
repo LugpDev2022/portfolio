@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
 import { Suspense, useContext } from "react";
+import PropTypes from "prop-types";
 import Col from "react-bootstrap/Col";
 import { AppContext } from "../context";
 
