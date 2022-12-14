@@ -15,7 +15,7 @@ export const ProjectCard = ({ project }) => {
         onClick={() => handleShowProjectModal(project)}
       >
         <img
-          src={project.url}
+          src={project.imgSrc}
           alt={project.title}
           className="img-fluid rounded project-img"
         />

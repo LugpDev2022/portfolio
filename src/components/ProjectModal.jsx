@@ -5,7 +5,7 @@ import { AppContext } from "../context";
 export const ProjectModal = () => {
   const { projectModalInfo, showProjectModal, handleCloseProjectModal } =
     useContext(AppContext);
-  const { title, url } = projectModalInfo;
+  const { title, imgSrc } = projectModalInfo;
 
   return (
     <Modal
@@ -20,7 +20,7 @@ export const ProjectModal = () => {
         <Modal.Title>{title}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <img src={url} alt={title} className="img-fluid" />
+        <img src={imgSrc} alt={title} className="img-fluid" />
       </Modal.Body>
     </Modal>
   );
