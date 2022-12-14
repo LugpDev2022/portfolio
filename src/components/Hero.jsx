@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
 import Col from "react-bootstrap/Col";
 import bg from "../assets/pc-bg.webp";
 import { AppContext } from "../context";
@@ -8,14 +8,10 @@ export const Hero = () => {
   const header = useRef();
 
   useEffect(() => {
-    window.addEventListener("load", updateHeaderHeight);
-
-    return () => window.removeEventListener("load", updateHeaderHeight);
+    setTimeout(() => {
+      setHeaderHeight(header.current.offsetHeight);
+    }, 300);
   }, [header]);
-
-  const updateHeaderHeight = () => {
-    setHeaderHeight(header.current.offsetHeight);
-  };
 
   return (
     //TODO: Change the profile image
