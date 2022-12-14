@@ -14,6 +14,7 @@ export const ProjectModal = () => {
       centered
       className="custom-modal"
       size="lg"
+      backdrop={false}
     >
       <Modal.Header closeButton closeVariant="white" style={{ border: "none" }}>
         <Modal.Title>{title}</Modal.Title>
