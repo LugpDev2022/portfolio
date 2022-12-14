@@ -8,19 +8,14 @@ export const Hero = () => {
   const header = useRef();
 
   useEffect(() => {
-    setHeaderHeight(header.current.offsetHeight);
+    window.addEventListener("load", updateHeaderHeight);
+
+    return () => window.removeEventListener("load", updateHeaderHeight);
   }, [header]);
 
-  //TODO: Apply a best solution
-  useEffect(() => {
-    setTimeout(() => {
-      const newHeight = header.current.offsetHeight;
-
-      if (newHeight !== headerHeight) {
-        setHeaderHeight(newHeight);
-      }
-    }, 300);
-  }, []);
+  const updateHeaderHeight = () => {
+    setHeaderHeight(header.current.offsetHeight);
+  };
 
   return (
     //TODO: Change the profile image
@@ -44,7 +39,7 @@ export const Hero = () => {
         style={{ height: `${headerHeight}px` }}
         src={bg}
         alt="background"
-        className="pc-bg"
+        className="pc-bg animate__animated animate__fadeIn"
       />
     </header>
   );
