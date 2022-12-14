@@ -1,7 +1,6 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-import { Hero, AppNavbar } from "./components";
-import { Projects } from "./components/Projects";
+import { Hero, AppNavbar, Projects } from "./components";
 
 function App() {
   return (

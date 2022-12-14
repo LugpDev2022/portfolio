@@ -10,7 +10,7 @@ export const Hero = () => {
   useEffect(() => {
     setTimeout(() => {
       setHeaderHeight(header.current.offsetHeight);
-    }, 300);
+    }, 500);
   }, [header]);
 
   return (

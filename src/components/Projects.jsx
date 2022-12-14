@@ -1,7 +1,8 @@
 import { useContext } from "react";
-import { Col, Row } from "react-bootstrap";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import { AppContext } from "../context";
-import { ProjectsGrid } from "./ProjectsGrid";
+import { ProjectCard } from "./ProjectCard";
 import projects from "../assets/projects";
 
 export const Projects = () => {
@@ -20,7 +21,11 @@ export const Projects = () => {
         </Col>
       </Row>
 
-      <ProjectsGrid projects={projects} />
+      <Row className="justify-content-around mt-5 px-5">
+        {projects.map((project) => {
+          return <ProjectCard project={project} key={project.title} />;
+        })}
+      </Row>
     </>
   );
 };
