@@ -1,4 +1,3 @@
-import React from "react";
 import Container from "react-bootstrap/Container";
 import { Hero, AppNavbar, Projects } from "./components";
 
