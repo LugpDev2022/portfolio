@@ -12,6 +12,7 @@ export const ProjectModal = () => {
       onHide={handleCloseProjectModal}
       centered
       className="custom-modal"
+      size="lg"
     >
       <Modal.Header closeButton closeVariant="white" style={{ border: "none" }}>
         <Modal.Title>{projectModalInfo.title}</Modal.Title>
