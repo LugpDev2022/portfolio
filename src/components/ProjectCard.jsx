@@ -1,18 +1,29 @@
-import { Suspense } from "react";
-import { Card, Col, Row } from "react-bootstrap";
+import PropTypes from "prop-types";
+import { Suspense, useContext } from "react";
+import Col from "react-bootstrap/Col";
+import { AppContext } from "../context";
 
 export const ProjectCard = ({ project }) => {
+  const { handleShowProjectModal } = useContext(AppContext);
+
   return (
     <Suspense fallback={<p>Loading...</p>}>
-      <Col xs={12} md={5} className="mb-5 mt-2">
-        <Card bg="dark">
-          <Card.Img variant="top" src={project.url} />
-
-          <Card.Body>
-            <Card.Title>{project.title}</Card.Title>
-          </Card.Body>
-        </Card>
+      <Col
+        xs={12}
+        md={5}
+        className="mb-5 mt-2 animate__animated animate__fadeIn"
+        onClick={() => handleShowProjectModal(project)}
+      >
+        <img
+          src={project.url}
+          alt={project.title}
+          className="img-fluid rounded project-img"
+        />
       </Col>
     </Suspense>
   );
+};
+
+ProjectCard.propTypes = {
+  project: PropTypes.object.isRequired,
 };

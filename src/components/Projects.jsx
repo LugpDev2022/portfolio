@@ -1,8 +1,7 @@
 import { useContext } from "react";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import { AppContext } from "../context";
-import { ProjectCard } from "./ProjectCard";
+import { ProjectCard, ProjectModal } from "./";
 import projects from "../assets/projects";
 
 export const Projects = () => {
@@ -11,14 +10,12 @@ export const Projects = () => {
   return (
     <>
       <Row id="projects">
-        <Col>
-          <h3
-            style={{ marginTop: isNavFixed ? "142px" : "80px" }}
-            className="text-center subtitle"
-          >
-            PROJECTS
-          </h3>
-        </Col>
+        <h3
+          style={{ marginTop: isNavFixed ? "142px" : "80px" }}
+          className="text-center subtitle animate__animated animate__fadeIn"
+        >
+          PROJECTS
+        </h3>
       </Row>
 
       <Row className="justify-content-around mt-5 px-5">
@@ -26,6 +23,8 @@ export const Projects = () => {
           return <ProjectCard project={project} key={project.title} />;
         })}
       </Row>
+
+      <ProjectModal />
     </>
   );
 };

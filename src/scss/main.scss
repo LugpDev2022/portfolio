@@ -51,6 +51,14 @@ body {
   transition: 200ms;
 }
 
+.project-img {
+  &:hover {
+    box-shadow: 0px 0px 35px #255880;
+    cursor: pointer;
+    transition: 200ms;
+  }
+}
+
 .pc-bg {
   position: absolute;
   z-index: -1;
