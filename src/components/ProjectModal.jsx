@@ -1,7 +1,9 @@
 import { useContext, useEffect, useState } from "react";
-import Modal from "react-bootstrap/Modal";
 import { AppContext } from "../context";
-import { Col, ListGroup, Row } from "react-bootstrap";
+import Modal from "react-bootstrap/Modal";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import ListGroup from "react-bootstrap/ListGroup";
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 import { divideArray } from "../helpers/divideArray";
 
@@ -24,7 +26,6 @@ export const ProjectModal = () => {
       className="custom-modal"
       size="lg"
       scrollable
-      backdrop={false}
     >
       <Modal.Header
         closeButton
@@ -34,28 +35,52 @@ export const ProjectModal = () => {
       >
         <Modal.Title className="fw-bold">{title}</Modal.Title>
         <a href={githubRepo} target="_blank">
-          <AiFillGithub />
+          <AiFillGithub className="modal-icon" />
         </a>
         <a href={url} target="_blank">
-          <AiOutlineLink />
+          <AiOutlineLink className="modal-icon" />
         </a>
       </Modal.Header>
-      <Modal.Body>
+      <Modal.Body className="py-0">
         <img src={imgSrc} alt={title} className="img-fluid" />
-        <h5 className="mt-3 h3">TechStack</h5>
+        <h5 className="my-3 h3">Tech Stack</h5>
 
-        <Row>
+        <Row className="mb-3">
           <Col>
-            <ul>
+            <ListGroup>
               {techStackFirstPart &&
-                techStackFirstPart.map((tech) => <li key={tech}>{tech}</li>)}
-            </ul>
+                techStackFirstPart.map((tech) => (
+                  <ListGroup.Item
+                    key={tech}
+                    className="fs-5"
+                    style={{
+                      background: "#081e2e",
+                      color: "white",
+                      border: "none",
+                    }}
+                  >
+                    {tech}
+                  </ListGroup.Item>
+                ))}
+            </ListGroup>
           </Col>
           <Col>
-            <ul>
+            <ListGroup>
               {techStackSecondPart &&
-                techStackSecondPart.map((tech) => <li key={tech}>{tech}</li>)}
-            </ul>
+                techStackSecondPart.map((tech) => (
+                  <ListGroup.Item
+                    key={tech}
+                    className="fs-5"
+                    style={{
+                      background: "#081e2e",
+                      color: "white",
+                      border: "none",
+                    }}
+                  >
+                    {tech}
+                  </ListGroup.Item>
+                ))}
+            </ListGroup>
           </Col>
         </Row>
       </Modal.Body>
