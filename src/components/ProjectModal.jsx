@@ -6,6 +6,7 @@ import Row from "react-bootstrap/Row";
 import ListGroup from "react-bootstrap/ListGroup";
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 import { divideArray } from "../helpers/divideArray";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 export const ProjectModal = () => {
   const { projectModalInfo, showProjectModal, handleCloseProjectModal } =
@@ -34,12 +35,19 @@ export const ProjectModal = () => {
         className="d-flex align-items-center justify-content-start gap-3"
       >
         <Modal.Title className="fw-bold">{title}</Modal.Title>
-        <a href={githubRepo} target="_blank">
-          <AiFillGithub className="modal-icon" />
-        </a>
-        <a href={url} target="_blank">
-          <AiOutlineLink className="modal-icon" />
-        </a>
+        <OverlayTrigger
+          overlay={<Tooltip id="tooltop-github">Source Code</Tooltip>}
+        >
+          <a href={githubRepo} target="_blank">
+            <AiFillGithub className="modal-icon" />
+          </a>
+        </OverlayTrigger>
+
+        <OverlayTrigger overlay={<Tooltip id="tooltop-link">URL</Tooltip>}>
+          <a href={url} target="_blank">
+            <AiOutlineLink className="modal-icon" />
+          </a>
+        </OverlayTrigger>
       </Modal.Header>
       <Modal.Body className="py-0">
         <img src={imgSrc} alt={title} className="img-fluid" />
