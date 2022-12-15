@@ -1,14 +1,20 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import { AppContext } from "../context";
-import { ListGroup } from "react-bootstrap";
+import { Col, ListGroup, Row } from "react-bootstrap";
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
+import { divideArray } from "../helpers/divideArray";
 
-//TODO: Split techStack into 2 columns
 export const ProjectModal = () => {
   const { projectModalInfo, showProjectModal, handleCloseProjectModal } =
     useContext(AppContext);
   const { title, imgSrc, techStack, githubRepo, url } = projectModalInfo;
+  const [[techStackFirstPart, techStackSecondPart], setDividedTechStack] =
+    useState([]);
+
+  useEffect(() => {
+    setDividedTechStack(divideArray(techStack));
+  }, [techStack]);
 
   return (
     <Modal
@@ -37,20 +43,21 @@ export const ProjectModal = () => {
       <Modal.Body>
         <img src={imgSrc} alt={title} className="img-fluid" />
         <h5 className="mt-3 h3">TechStack</h5>
-        <ListGroup variant="flush">
-          {techStack &&
-            techStack.map((tech) => (
-              <ListGroup.Item
-                key={tech}
-                style={{
-                  color: "white",
-                  border: "none",
-                }}
-              >
-                {tech}
-              </ListGroup.Item>
-            ))}
-        </ListGroup>
+
+        <Row>
+          <Col>
+            <ul>
+              {techStackFirstPart &&
+                techStackFirstPart.map((tech) => <li key={tech}>{tech}</li>)}
+            </ul>
+          </Col>
+          <Col>
+            <ul>
+              {techStackSecondPart &&
+                techStackSecondPart.map((tech) => <li key={tech}>{tech}</li>)}
+            </ul>
+          </Col>
+        </Row>
       </Modal.Body>
     </Modal>
   );
