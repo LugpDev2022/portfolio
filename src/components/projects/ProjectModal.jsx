@@ -1,12 +1,13 @@
 import { useContext, useEffect, useState } from "react";
-import { AppContext } from "../context";
+import { AppContext } from "../../context";
+import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
+import { divideArray } from "../../helpers";
 import Modal from "react-bootstrap/Modal";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Tooltip from "react-bootstrap/Tooltip";
 import ListGroup from "react-bootstrap/ListGroup";
-import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
-import { divideArray } from "../helpers/divideArray";
-import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 export const ProjectModal = () => {
   const { projectModalInfo, showProjectModal, handleCloseProjectModal } =

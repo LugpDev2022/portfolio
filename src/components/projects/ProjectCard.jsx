@@ -1,7 +1,7 @@
 import { Suspense, useContext } from "react";
 import PropTypes from "prop-types";
 import Col from "react-bootstrap/Col";
-import { AppContext } from "../context";
+import { AppContext } from "../../context";
 
 export const ProjectCard = ({ project }) => {
   const { handleShowProjectModal } = useContext(AppContext);
