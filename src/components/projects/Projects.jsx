@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import { AppContext } from "../../context";
 import { ProjectCard, ProjectModal } from "./";
 import projects from "../../assets/projects";
-import { Col } from "react-bootstrap";
 
 export const Projects = () => {
   const { isNavFixed } = useContext(AppContext);
