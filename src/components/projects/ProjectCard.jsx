@@ -5,7 +5,6 @@ import { AppContext } from "../../context";
 
 export const ProjectCard = ({ project }) => {
   const { handleShowProjectModal } = useContext(AppContext);
-
   return (
     <Suspense fallback={<p>Loading...</p>}>
       <Col
@@ -13,6 +12,7 @@ export const ProjectCard = ({ project }) => {
         md={5}
         className="mb-5 mt-2 animate__animated animate__fadeIn"
         onClick={() => handleShowProjectModal(project)}
+        data-testid="card"
       >
         <img
           src={project.imgSrc}
