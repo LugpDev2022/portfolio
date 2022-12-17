@@ -1,13 +1,16 @@
 import { useContext, useEffect, useState } from "react";
+
 import { AppContext } from "../../context";
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
-import { divideArray } from "../../helpers";
+
 import Modal from "react-bootstrap/Modal";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import ListGroup from "react-bootstrap/ListGroup";
+
+import { divideArray } from "../../helpers";
 
 export const ProjectModal = () => {
   const { projectModalInfo, showProjectModal, handleCloseProjectModal } =
@@ -59,15 +62,7 @@ export const ProjectModal = () => {
             <ListGroup>
               {techStackFirstPart &&
                 techStackFirstPart.map((tech) => (
-                  <ListGroup.Item
-                    key={tech}
-                    className="fs-5"
-                    style={{
-                      background: "#081e2e",
-                      color: "white",
-                      border: "none",
-                    }}
-                  >
+                  <ListGroup.Item key={tech} className="fs-5 custom-list-item">
                     {tech}
                   </ListGroup.Item>
                 ))}
@@ -77,15 +72,7 @@ export const ProjectModal = () => {
             <ListGroup>
               {techStackSecondPart &&
                 techStackSecondPart.map((tech) => (
-                  <ListGroup.Item
-                    key={tech}
-                    className="fs-5"
-                    style={{
-                      background: "#081e2e",
-                      color: "white",
-                      border: "none",
-                    }}
-                  >
+                  <ListGroup.Item key={tech} className="fs-5 custom-list-item">
                     {tech}
                   </ListGroup.Item>
                 ))}
