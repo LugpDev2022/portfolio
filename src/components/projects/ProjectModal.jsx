@@ -1,6 +1,3 @@
-import { useContext, useEffect, useState } from "react";
-
-import { AppContext } from "../../context";
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 
 import Modal from "react-bootstrap/Modal";
@@ -9,19 +6,19 @@ import Row from "react-bootstrap/Row";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import ListGroup from "react-bootstrap/ListGroup";
-
-import { divideArray } from "../../helpers";
+import { useProjectModal } from "../../hooks";
 
 export const ProjectModal = () => {
-  const { projectModalInfo, showProjectModal, handleCloseProjectModal } =
-    useContext(AppContext);
-  const { title, imgSrc, techStack, githubRepo, url } = projectModalInfo;
-  const [[techStackFirstPart, techStackSecondPart], setDividedTechStack] =
-    useState([]);
-
-  useEffect(() => {
-    setDividedTechStack(divideArray(techStack));
-  }, [techStack]);
+  const {
+    showProjectModal,
+    handleCloseProjectModal,
+    techStackFirstPart,
+    techStackSecondPart,
+    title,
+    githubRepo,
+    url,
+    imgSrc,
+  } = useProjectModal();
 
   return (
     <Modal
@@ -56,7 +53,6 @@ export const ProjectModal = () => {
       <Modal.Body className="py-0">
         <img src={imgSrc} alt={title} className="img-fluid" />
         <h5 className="my-3 h3">Tech Stack</h5>
-
         <Row className="mb-3">
           <Col>
             <ListGroup>
