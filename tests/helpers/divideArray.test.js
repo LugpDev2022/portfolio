@@ -4,8 +4,13 @@ const oddArray = ["1", "2", "3"];
 const pairArray = ["1", "2", "3", "4"];
 
 describe("tests on divideArray.js", () => {
-  test("should return an empty array", () => {
+  test("should return an empty array if array not gived", () => {
     const resp = divideArray();
+    expect(resp).toEqual([]);
+  });
+
+  test("should return an empty array if given array is empty", () => {
+    const resp = divideArray([]);
     expect(resp).toEqual([]);
   });
 
