@@ -39,13 +39,13 @@ export const ProjectModal = () => {
         <OverlayTrigger
           overlay={<Tooltip id="tooltop-github">Source Code</Tooltip>}
         >
-          <a href={githubRepo} target="_blank">
+          <a href={githubRepo} target="_blank" data-testid="githubRepoLink">
             <AiFillGithub className="modal-icon" />
           </a>
         </OverlayTrigger>
 
         <OverlayTrigger overlay={<Tooltip id="tooltop-link">URL</Tooltip>}>
-          <a href={url} target="_blank">
+          <a href={url} target="_blank" data-testid="urlLink">
             <AiOutlineLink className="modal-icon" />
           </a>
         </OverlayTrigger>
