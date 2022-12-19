@@ -9,7 +9,6 @@ export const useProjectModal = () => {
     useState([]);
 
   const { techStack } = projectModalInfo;
-
   useEffect(() => {
     setDividedTechStack(divideArray(techStack));
   }, [techStack]);
