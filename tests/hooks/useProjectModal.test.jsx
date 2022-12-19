@@ -34,8 +34,8 @@ describe("tests on useProjectModal.jsx", () => {
   });
 
   test("should call divideArray()", () => {
-    divideArray.mockReturnValue([[], []]);
-    renderHook(useProjectModal).result;
+    renderHook(useProjectModal);
+
     expect(divideArray).toHaveBeenCalledWith([]);
   });
 });
