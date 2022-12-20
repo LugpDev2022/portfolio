@@ -79,7 +79,6 @@ body {
 }
 
 .skillset-icon > svg {
-  display: block;
   height: 60px;
   width: 60px;
 }
@@ -88,4 +87,18 @@ body {
   background: #081e2e !important;
   color: white !important;
   border: none !important;
+}
+
+.contact-icon {
+  margin: 0px 2em;
+
+  & > svg {
+    height: 50px;
+    width: 50px;
+    transition: 200ms;
+
+    &:hover {
+      fill: #255880;
+    }
+  }
 }

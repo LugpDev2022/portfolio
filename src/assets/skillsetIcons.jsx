@@ -27,7 +27,7 @@ export const skillsetIcons = [
   {
     icon: <FaBootstrap />,
     id: "tooltip-bootstrap",
-    tooltip: "Bootstrap",
+    tooltip: "Bootstrap 5",
   },
   {
     icon: <SiJavascript />,

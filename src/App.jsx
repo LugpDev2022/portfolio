@@ -1,5 +1,5 @@
 import Container from "react-bootstrap/Container";
-import { Hero, AppNavbar, Projects, Skillset } from "./components";
+import { Hero, AppNavbar, Projects, Skillset, Contact } from "./components";
 
 const App = () => (
   <Container fluid className="p-0 overflow-hidden">
@@ -7,6 +7,7 @@ const App = () => (
     <AppNavbar />
     <Projects />
     <Skillset />
+    <Contact />
   </Container>
 );
 
