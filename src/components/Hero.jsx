@@ -8,10 +8,18 @@ export const Hero = () => {
   const header = useRef();
 
   useEffect(() => {
+    window.addEventListener("load", updateHeaderHeight);
+
     setTimeout(() => {
       setHeaderHeight(header.current.offsetHeight);
     }, 500);
+
+    return () => window.removeEventListener("load", updateHeaderHeight);
   }, [header]);
+
+  const updateHeaderHeight = () => {
+    setHeaderHeight(header.current.offsetHeight);
+  };
 
   return (
     //TODO: Change the profile image
