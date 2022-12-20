@@ -1,11 +1,18 @@
 @import "./custom.scss";
 
+//General styles
 * {
   color: #fff;
 }
 
 body {
   background-color: #0f2434 !important;
+}
+
+.subtitle {
+  font-size: 1.6em;
+  font-weight: 700;
+  text-align: center;
 }
 
 .title {
@@ -17,15 +24,29 @@ body {
   text-align: center;
 }
 
-.subtitle {
-  font-size: 1.6em;
-  font-weight: 700;
-  text-align: center;
+//Hero styles
+.pc-bg {
+  filter: blur(15px);
+  padding: 0px !important;
+  position: absolute;
+  z-index: -1;
 }
 
-.my-img {
+.profile-img {
   border-radius: 100%;
   max-width: 200px;
+}
+
+//Navbar styles
+.custom-brand {
+  color: white;
+  text-decoration: none !important;
+  font-size: 1.2em;
+  transition: 200ms;
+
+  &:hover {
+    color: #255880 !important;
+  }
 }
 
 .custom-link {
@@ -38,32 +59,11 @@ body {
   }
 }
 
-.custom-brand {
-  color: white;
-  text-decoration: none !important;
-
-  font-size: 1.2em;
-
-  &:hover {
-    color: #255880 !important;
-  }
-
-  transition: 200ms;
-}
-
-.project-img {
-  &:hover {
-    box-shadow: 0px 0px 35px #255880;
-    cursor: pointer;
-    transition: 200ms;
-  }
-}
-
-.pc-bg {
-  position: absolute;
-  z-index: -1;
-  padding: 0px !important;
-  filter: blur(15px);
+//Projects styles
+.custom-list-item {
+  background: #081e2e !important;
+  border: none !important;
+  color: white !important;
 }
 
 .custom-modal {
@@ -78,24 +78,27 @@ body {
   width: 35px;
 }
 
+.project-img {
+  &:hover {
+    box-shadow: 0px 0px 35px #255880;
+    cursor: pointer;
+    transition: 200ms;
+  }
+}
+
 .skillset-icon > svg {
   height: 60px;
   width: 60px;
 }
 
-.custom-list-item {
-  background: #081e2e !important;
-  color: white !important;
-  border: none !important;
-}
-
+//Contact styles
 .contact-icon {
   margin: 0px 2em;
 
   & > svg {
     height: 50px;
-    width: 50px;
     transition: 200ms;
+    width: 50px;
 
     &:hover {
       fill: #255880;
