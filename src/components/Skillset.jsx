@@ -1,4 +1,7 @@
-import { Col, OverlayTrigger, Row, Tooltip } from "react-bootstrap";
+import Col from "react-bootstrap/Col";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Row from "react-bootstrap/Row";
+import Tooltip from "react-bootstrap/Tooltip";
 import { skillsetIcons } from "../assets/skillsetIcons";
 
 export const Skillset = () => (
