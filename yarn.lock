@@ -503,6 +503,16 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.19.8.tgz#c8285183dbdb17008578dbacb6e22748709b4822"
   integrity sha512-bfZ0cQ1uZs2PqpulNL5j/3w+GDhP36k1K5c38QdQg+Swy51jFZWWeIkteNsufkQxp986wnqRRsb/bHbY1WQ7TA==
 
+"@fontsource/playfair-display@^5.0.17":
+  version "5.0.17"
+  resolved "https://registry.yarnpkg.com/@fontsource/playfair-display/-/playfair-display-5.0.17.tgz#742b6a7501bc7a371017e0b2ef414d1c4caf3eb2"
+  integrity sha512-8TregVIym6GN7frR7JULEdXHIwWCgC3YrHiFQXScCboDcRvMcTpHiKV/78UN0fIPhnza5xRpO9RvLhrP3lS05Q==
+
+"@fontsource/poppins@^5.0.8":
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/@fontsource/poppins/-/poppins-5.0.8.tgz#a1c5540aedb3719a36eba5c7c5dfaa3aed3c9f80"
+  integrity sha512-P8owfYWluoUY5Nyzk4gT/L6LmLmseP6ezFWhj6VBUa5pRIdnCvNJpoQ6i/vhekjtJOfqX6nKlB+LCttoUl2GQQ==
+
 "@jridgewell/gen-mapping@^0.3.0", "@jridgewell/gen-mapping@^0.3.2":
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/@jridgewell/gen-mapping/-/gen-mapping-0.3.3.tgz#7e02e6eb5df901aaedb08514203b096614024098"
