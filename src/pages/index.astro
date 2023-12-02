@@ -1,7 +1,23 @@
 ---
+import Navigation from '../components/Navigation.astro';
+import Contacts from '../components/Contacts.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<h1>Portfolio</h1>
+<Layout>
+  <section>
+    <h1>Luis Cervantes</h1>
+    <h2>&lt;Front-End Developer /&gt;</h2>
+
+    <blockquote>
+      <p>
+        “The people who are crazy enough to think they can change the world are
+        the ones who do.” - Steve Jobs
+      </p>
+    </blockquote>
+
+    <Navigation />
+
+    <Contacts />
+  </section>
 </Layout>
