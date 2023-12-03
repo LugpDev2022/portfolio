@@ -3,9 +3,11 @@ import Navigation from '../components/Navigation.astro';
 import Contacts from '../components/Contacts.astro';
 import Layout from '../layouts/Layout.astro';
 import Project from '../components/Project.astro';
-import { projects } from '../projects';
 import Subtitle from '../components/Subtitle.astro';
 import Arrow from '../svgs/Arrow.astro';
+
+import { projects } from '../projects';
+import { languages, frameworks, tools } from '../images';
 ---
 
 <Layout>
@@ -46,6 +48,66 @@ import Arrow from '../svgs/Arrow.astro';
       </div>
 
       <a href='' class='projects-link'>See More <Arrow /></a>
+    </section>
+
+    <section class='mt-[75px]'>
+      <Subtitle>Skillset</Subtitle>
+
+      <section
+        class='border-cyan-300 border-[1.5px] rounded-[10px] pt-[35px] pb-[30px] flex justify-around mt-[25px] relative'
+      >
+        <header
+          class='absolute -top-4 left-[30px] px-[10px] border-[1.5px] border-y-0 border-x-cyan-300 bg-[#070b30]'
+        >
+          <h4>Languages</h4>
+        </header>
+
+        {
+          languages.map((language) => (
+            <img
+              src={`/languages/${language}.png`}
+              alt={`${language} logo`}
+              class='h-12'
+            />
+          ))
+        }
+      </section>
+
+      <section
+        class='border-cyan-300 border-[1.5px] rounded-[10px] pt-[35px] pb-[30px] grid grid-cols-3 mt-[55px] relative gap-8 justify-items-center'
+      >
+        <header
+          class='absolute -top-4 left-[30px] px-[10px] border-[1.5px] border-y-0 border-x-cyan-300 bg-[#070b30]'
+        >
+          <h4>Frameworks</h4>
+        </header>
+
+        {
+          frameworks.map((framework) => (
+            <img
+              src={`/frameworks/${framework}.png`}
+              alt={`${framework} logo`}
+              class='h-12'
+            />
+          ))
+        }
+      </section>
+
+      <section
+        class='border-cyan-300 border-[1.5px] rounded-[10px] pt-[35px] pb-[30px] flex justify-around mt-[55px] relative'
+      >
+        <header
+          class='absolute -top-4 left-[30px] px-[10px] border-[1.5px] border-y-0 border-x-cyan-300 bg-[#070b30]'
+        >
+          <h4>Tools</h4>
+        </header>
+
+        {
+          tools.map((tool) => (
+            <img src={`/tools/${tool}.png`} alt={`${tool} logo`} class='h-12' />
+          ))
+        }
+      </section>
     </section>
   </main>
 </Layout>
