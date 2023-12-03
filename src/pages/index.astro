@@ -5,6 +5,7 @@ import Layout from '../layouts/Layout.astro';
 import Project from '../components/Project.astro';
 import Subtitle from '../components/Subtitle.astro';
 import Arrow from '../svgs/Arrow.astro';
+import Skillset from '../components/Skillset.astro';
 
 import { projects } from '../projects';
 import { languages, frameworks, tools } from '../images';
@@ -47,67 +48,34 @@ import { languages, frameworks, tools } from '../images';
         {projects.map((project) => <Project {...project} />)}
       </div>
 
-      <a href='' class='projects-link'>See More <Arrow /></a>
+      <a
+        href='https://github.com/LugpDev2022?tab=repositories'
+        class='projects-link mt-[10px]'>See more projects <Arrow /></a
+      >
     </section>
 
     <section class='mt-[75px]'>
       <Subtitle>Skillset</Subtitle>
 
-      <section
-        class='border-cyan-300 border-[1.5px] rounded-[10px] pt-[35px] pb-[30px] flex justify-around mt-[25px] relative'
+      <Skillset
+        path='/languages'
+        skills={languages}
+        className='flex justify-around'
       >
-        <header
-          class='absolute -top-4 left-[30px] px-[10px] border-[1.5px] border-y-0 border-x-cyan-300 bg-[#070b30]'
-        >
-          <h4>Languages</h4>
-        </header>
+        Languages
+      </Skillset>
 
-        {
-          languages.map((language) => (
-            <img
-              src={`/languages/${language}.png`}
-              alt={`${language} logo`}
-              class='h-12'
-            />
-          ))
-        }
-      </section>
-
-      <section
-        class='border-cyan-300 border-[1.5px] rounded-[10px] pt-[35px] pb-[30px] grid grid-cols-3 mt-[55px] relative gap-8 justify-items-center'
+      <Skillset
+        path='/frameworks'
+        skills={frameworks}
+        className='grid grid-cols-3 gap-8 justify-items-center'
       >
-        <header
-          class='absolute -top-4 left-[30px] px-[10px] border-[1.5px] border-y-0 border-x-cyan-300 bg-[#070b30]'
-        >
-          <h4>Frameworks</h4>
-        </header>
+        Frameworks
+      </Skillset>
 
-        {
-          frameworks.map((framework) => (
-            <img
-              src={`/frameworks/${framework}.png`}
-              alt={`${framework} logo`}
-              class='h-12'
-            />
-          ))
-        }
-      </section>
-
-      <section
-        class='border-cyan-300 border-[1.5px] rounded-[10px] pt-[35px] pb-[30px] flex justify-around mt-[55px] relative'
-      >
-        <header
-          class='absolute -top-4 left-[30px] px-[10px] border-[1.5px] border-y-0 border-x-cyan-300 bg-[#070b30]'
-        >
-          <h4>Tools</h4>
-        </header>
-
-        {
-          tools.map((tool) => (
-            <img src={`/tools/${tool}.png`} alt={`${tool} logo`} class='h-12' />
-          ))
-        }
-      </section>
+      <Skillset path='/tools' skills={tools} className='flex justify-around'>
+        Tools
+      </Skillset>
     </section>
   </main>
 </Layout>

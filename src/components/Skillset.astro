@@ -1,0 +1,30 @@
+---
+interface Props {
+  skills: string[];
+  path: string;
+  className?: string;
+}
+
+const { skills, path, className = '' } = Astro.props;
+---
+
+<section
+  class={`border-cyan-300 border-[1.5px] rounded-[10px] pt-[35px] pb-[30px] mt-[55px] relative ${className}`}
+>
+  <header
+    class='absolute -top-4 left-[30px] px-[10px] border-[1.5px] border-y-0 border-x-cyan-300 bg-[#070b30]'
+  >
+    <h4><slot /></h4>
+  </header>
+
+  {
+    skills.map((skill) => (
+      <img
+        loading='lazy'
+        src={`${path}/${skill}.png`}
+        alt={`${skill} logo`}
+        class='h-12'
+      />
+    ))
+  }
+</section>
