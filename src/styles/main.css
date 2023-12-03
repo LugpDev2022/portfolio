@@ -11,3 +11,19 @@ h1 {
 p {
   font-weight: 300;
 }
+
+.projects-link {
+  display: inline-flex;
+  align-items: center;
+  transition: 300ms;
+  gap: 10px;
+}
+
+.projects-link:hover {
+  @apply text-cyan-300;
+  gap: 20px;
+}
+
+.projects-link:hover > svg > path {
+  @apply fill-cyan-300;
+}

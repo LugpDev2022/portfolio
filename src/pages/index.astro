@@ -5,6 +5,7 @@ import Layout from '../layouts/Layout.astro';
 import Project from '../components/Project.astro';
 import { projects } from '../projects';
 import Subtitle from '../components/Subtitle.astro';
+import Arrow from '../svgs/Arrow.astro';
 ---
 
 <Layout>
@@ -37,12 +38,14 @@ import Subtitle from '../components/Subtitle.astro';
       </p>
     </section>
 
-    <section class='relative mt-[75px]'>
+    <section class='mt-[75px]'>
       <Subtitle>Projects</Subtitle>
 
       <div class='flex flex-col gap-5'>
         {projects.map((project) => <Project {...project} />)}
       </div>
+
+      <a href='' class='projects-link'>See More <Arrow /></a>
     </section>
   </main>
 </Layout>
