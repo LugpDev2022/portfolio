@@ -27,3 +27,17 @@ p {
 .projects-link:hover > svg > path {
   @apply fill-cyan-300;
 }
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #04071d;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-cyan-300;
+  border-radius: 5px;
+}
