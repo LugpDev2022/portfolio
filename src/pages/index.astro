@@ -2,6 +2,9 @@
 import Navigation from '../components/Navigation.astro';
 import Contacts from '../components/Contacts.astro';
 import Layout from '../layouts/Layout.astro';
+import Project from '../components/Project.astro';
+import { projects } from '../projects';
+import Subtitle from '../components/Subtitle.astro';
 ---
 
 <Layout>
@@ -10,7 +13,7 @@ import Layout from '../layouts/Layout.astro';
     <h2 class='text-2xl mt-2 mb-10'>&lt;Front-End Developer /&gt;</h2>
 
     <blockquote>
-      <p class='font-light' style='text-wrap: balance;'>
+      <p style='text-wrap: balance;'>
         “The people who are crazy enough to think they can change the world are
         the ones who do.” - Steve Jobs
       </p>
@@ -20,4 +23,26 @@ import Layout from '../layouts/Layout.astro';
 
     <Contacts />
   </section>
+
+  <main>
+    <section>
+      <Subtitle>About</Subtitle>
+
+      <p>
+        I'm passionate about software development, seeking exciting
+        opportunities to start my professional career. Although I lack direct
+        work experience, I have been dedicating time and effort to personal
+        projects with the goal of enhancing my skills in both web development
+        and design.
+      </p>
+    </section>
+
+    <section class='relative mt-[75px]'>
+      <Subtitle>Projects</Subtitle>
+
+      <div class='flex flex-col gap-5'>
+        {projects.map((project) => <Project {...project} />)}
+      </div>
+    </section>
+  </main>
 </Layout>

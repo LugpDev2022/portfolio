@@ -7,3 +7,7 @@ html {
 h1 {
   font-family: 'Playfair Display';
 }
+
+p {
+  font-weight: 300;
+}
