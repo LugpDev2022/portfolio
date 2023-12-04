@@ -1,12 +1,17 @@
 import { useEffect, useState } from 'react';
 import type { Project as ProjectType } from '../projects';
 
-const Project: React.FC<ProjectType> = ({
+interface Props extends ProjectType {
+  lazy?: boolean;
+}
+
+const Project: React.FC<Props> = ({
   title,
   image,
   description,
   techStack,
   url,
+  lazy,
 }) => {
   const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth < 1024);
 
@@ -50,6 +55,7 @@ const Project: React.FC<ProjectType> = ({
         src={image}
         alt='Project Screenshot'
         className='w-44 aspect-video rounded-md project-image'
+        loading={lazy ? 'lazy' : 'eager'}
       />
     </div>
   );

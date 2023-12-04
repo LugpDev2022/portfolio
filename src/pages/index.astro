@@ -46,8 +46,8 @@ import { languages, frameworks, tools } from '../images';
 
       <div class='flex flex-col gap-5'>
         {
-          projects.map((project) => (
-            <Project {...project} client:only='react' />
+          projects.map((project, i) => (
+            <Project {...project} lazy={i >= 2} client:only='react' />
           ))
         }
       </div>
