@@ -50,7 +50,7 @@ const Project: React.FC<Props> = ({
           <>
             {title}
             <img
-              src='/rotated-arrow.svg'
+              src='/images/rotated-arrow.svg'
               className='rotated-arrow'
               alt='rotated arrow image'
             />
