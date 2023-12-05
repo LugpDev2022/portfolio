@@ -13,11 +13,15 @@ const Project: React.FC<Props> = ({
   url,
   lazy,
 }) => {
-  const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth < 1024);
+  const MOBILE_BREAKPOINT = 1024;
+
+  const [isMobile, setIsMobile] = useState<boolean>(
+    window.innerWidth < MOBILE_BREAKPOINT
+  );
 
   useEffect(() => {
     const handler = () => {
-      setIsMobile(window.innerWidth < 1024);
+      setIsMobile(window.innerWidth < MOBILE_BREAKPOINT);
     };
 
     window.addEventListener('resize', handler);
@@ -27,24 +31,39 @@ const Project: React.FC<Props> = ({
     };
   }, []);
 
+  const ProjectTitle = ({ children }: { children: React.ReactNode }) => {
+    const className = 'inline-flex gap-[10px] project-title';
+
+    return isMobile ? (
+      <a href={url} rel='noreferrer' target='_blank' className={className}>
+        {children}
+      </a>
+    ) : (
+      <h4 className={className}>{children}</h4>
+    );
+  };
+
   const Content = () => (
     <div className='flex flex-col gap-5'>
-      <a
-        href={url}
-        rel='noreferrer'
-        target='_blank'
-        className='inline-flex gap-[10px]'
-      >
-        {title}
-        <img src='/rotated-arrow.svg' className='rotated-arrow' />
-      </a>
-      <p>{description}</p>
+      <div>
+        <ProjectTitle>
+          <>
+            {title}
+            <img
+              src='/rotated-arrow.svg'
+              className='rotated-arrow'
+              alt='rotated arrow image'
+            />
+          </>
+        </ProjectTitle>
+        <p className='mt-[5px]'>{description}</p>
+      </div>
 
       <ul className='flex flex-wrap gap-[10px]'>
         {techStack.map((tech) => (
           <li
             key={tech}
-            className='bg-cyan-300 text-[#070b30] rounded-3xl px-[10px] py-[3px]'
+            className='bg-cyan-300 text-[#070b30] rounded-3xl px-[10px] py-[3px] text-base'
           >
             {tech}
           </li>
@@ -60,12 +79,16 @@ const Project: React.FC<Props> = ({
     </div>
   );
 
+  const className = 'flex flex-col gap-5';
+
   return (
     <article className='project py-5'>
       {isMobile ? (
-        <Content />
+        <div className={className}>
+          <Content />
+        </div>
       ) : (
-        <a href={url} rel='noreferrer' target='_blank' className='block'>
+        <a href={url} rel='noreferrer' target='_blank' className={className}>
           <Content />
         </a>
       )}
