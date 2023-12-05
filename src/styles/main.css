@@ -12,6 +12,12 @@ p {
   font-weight: 300;
 }
 
+@media (max-width: 1023px) {
+  .quote {
+    text-wrap: balance;
+  }
+}
+
 .projects-link {
   display: inline-flex;
   align-items: center;

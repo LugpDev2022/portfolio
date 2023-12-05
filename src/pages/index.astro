@@ -1,5 +1,5 @@
 ---
-// import Navigation from '../components/Navigation.astro';
+import Navigation from '../components/Navigation.astro';
 import Contacts from '../components/Contacts.astro';
 import Layout from '../layouts/Layout.astro';
 import AboutSection from '../sections/AboutSection.astro';
@@ -8,20 +8,22 @@ import SkillsetSection from '../sections/SkillsetSection.astro';
 ---
 
 <Layout>
-  <section>
-    <h1 class='text-5xl'>Luis Cervantes</h1>
-    <h2 class='text-2xl mt-2 mb-10'>&lt;Front-End Developer /&gt;</h2>
+  <section class='lg:shrink-0 lg:basis-[400px] lg:h-screen relative'>
+    <div class='lg:fixed lg:w-[400px] lg:h-full'>
+      <h1 class='text-5xl'>Luis Cervantes</h1>
+      <h2 class='text-2xl mt-2 mb-10'>&lt;Front-End Developer /&gt;</h2>
 
-    <blockquote>
-      <p style='text-wrap: balance;'>
-        “The people who are crazy enough to think they can change the world are
-        the ones who do.” - Steve Jobs
-      </p>
-    </blockquote>
+      <blockquote>
+        <p class='quote'>
+          “The people who are crazy enough to think they can change the world
+          are the ones who do.” - Steve Jobs
+        </p>
+      </blockquote>
 
-    <!-- <Navigation /> -->
+      <Navigation />
 
-    <Contacts />
+      <Contacts />
+    </div>
   </section>
 
   <main>
