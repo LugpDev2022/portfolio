@@ -13,7 +13,7 @@ const Project: React.FC<Props> = ({
   url,
   lazy,
 }) => {
-  const MOBILE_BREAKPOINT = 1024;
+  const MOBILE_BREAKPOINT = 640;
 
   const [isMobile, setIsMobile] = useState<boolean>(
     window.innerWidth < MOBILE_BREAKPOINT
@@ -44,8 +44,8 @@ const Project: React.FC<Props> = ({
   };
 
   const Content = () => (
-    <div className='flex flex-col gap-5'>
-      <div>
+    <>
+      <div className='sm:order-2'>
         <ProjectTitle>
           <>
             {title}
@@ -57,32 +57,34 @@ const Project: React.FC<Props> = ({
           </>
         </ProjectTitle>
         <p className='mt-[5px]'>{description}</p>
-      </div>
 
-      <ul className='flex flex-wrap gap-[10px]'>
-        {techStack.map((tech) => (
-          <li
-            key={tech}
-            className='bg-cyan-300 text-[#070b30] rounded-3xl px-[10px] py-[3px] text-base'
-          >
-            {tech}
-          </li>
-        ))}
-      </ul>
+        <ul className='flex flex-wrap gap-[10px] mt-5'>
+          {techStack.map((tech) => (
+            <li
+              key={tech}
+              className='bg-cyan-300 text-[#070b30] rounded-3xl px-[10px] py-[3px] text-base'
+            >
+              {tech}
+            </li>
+          ))}
+        </ul>
+      </div>
 
       <img
         src={image}
         alt='Project Screenshot'
-        className='w-44 aspect-video rounded-md project-image'
+        className='max-h-[99px] rounded-md project-image sm:order-1'
         loading={lazy ? 'lazy' : 'eager'}
+        width='176px'
+        height='99px'
       />
-    </div>
+    </>
   );
 
-  const className = 'flex flex-col gap-5';
+  const className = 'flex flex-col gap-5 sm:flex-row py-5 sm:p-5';
 
   return (
-    <article className='project py-5'>
+    <article className='project rounded-[10px]'>
       {isMobile ? (
         <div className={className}>
           <Content />

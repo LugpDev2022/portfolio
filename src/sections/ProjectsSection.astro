@@ -9,7 +9,7 @@ import { projects } from '../projects';
 <section class='mt-[75px]'>
   <Subtitle>Projects</Subtitle>
 
-  <div class='flex flex-col gap-5'>
+  <div class='flex flex-col gap-5 mt-5'>
     {
       projects.map((project, i) => (
         <Project {...project} lazy={i >= 2} client:only='react' />
