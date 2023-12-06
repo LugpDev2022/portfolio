@@ -23,7 +23,9 @@ const { skills, path, className = '' } = Astro.props;
         loading='lazy'
         src={`${path}/${skill}.png`}
         alt={`${skill} logo`}
-        class='h-12'
+        class='max-w-[48px] max-h-[48px]'
+        height='48px'
+        width='48px'
       />
     ))
   }

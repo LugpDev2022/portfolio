@@ -53,6 +53,8 @@ const Project: React.FC<Props> = ({
               src='/images/rotated-arrow.svg'
               className='rotated-arrow'
               alt='rotated arrow image'
+              width='14px'
+              height='28px'
             />
           </>
         </ProjectTitle>
