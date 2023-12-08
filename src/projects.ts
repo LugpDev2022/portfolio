@@ -9,38 +9,47 @@ export interface Project {
 export const projects: Project[] = [
   {
     title: 'Todo App',
-    image:
-      'https://upload.wikimedia.org/wikipedia/commons/9/99/White_Background_%28To_id_screen_dust_during_cleanup%29.jpg',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt consectetur nisi id vulputate. Nunc ultricies placerat augue, ',
+    image: '/images/projects/todoApp.png',
+    description: '',
     techStack: ['React', 'Bootstrap'],
     url: 'https://lugp-todo-app.netlify.app',
   },
   {
-    title: 'Todo App',
-    image:
-      'https://upload.wikimedia.org/wikipedia/commons/9/99/White_Background_%28To_id_screen_dust_during_cleanup%29.jpg',
+    title: 'Calculator',
+    image: '/images/projects/calculator.png',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt consectetur nisi id vulputate. Nunc ultricies placerat augue, ',
+      'Web calculator for helping you with mathematical operations. It has dark and light mode.',
+    techStack: ['React', 'Typescript', 'Tailwind', 'Vitest'],
+    url: 'https://lugp-calculator.netlify.app/',
+  },
+  {
+    title: 'Advice Generator',
+    image: '/images/projects/adviceGenerator.png',
+    description: '',
     techStack: ['React', 'Bootstrap'],
     url: 'https://lugp-todo-app.netlify.app',
   },
   {
-    title: 'Todo App',
-    image:
-      'https://upload.wikimedia.org/wikipedia/commons/9/99/White_Background_%28To_id_screen_dust_during_cleanup%29.jpg',
+    title: 'Time App',
+    image: '/images/projects/timeApp.png',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt consectetur nisi id vulputate. Nunc ultricies placerat augue, ',
-    techStack: ['React', 'Bootstrap'],
+      'Small app for basic time tasks like watching the hour and creating timers.',
+    techStack: ['React', 'Bootstrap', 'Redux', 'Jest'],
     url: 'https://lugp-todo-app.netlify.app',
   },
   {
-    title: 'Todo App',
-    image:
-      'https://upload.wikimedia.org/wikipedia/commons/9/99/White_Background_%28To_id_screen_dust_during_cleanup%29.jpg',
+    title: 'News Page',
+    image: '/images/projects/news-page.png',
+    description: '',
+    techStack: ['Astro', 'Bootstrap', 'Sass'],
+    url: 'https://lugp-todo-app.netlify.app',
+  },
+  {
+    title: '404 Not Found',
+    image: '/images/projects/not-found.png',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt consectetur nisi id vulputate. Nunc ultricies placerat augue, ',
-    techStack: ['React', 'Bootstrap'],
+      'Small app for basic time tasks like watching the hour and creating timers.',
+    techStack: ['Astro', 'Tailwind', 'Css'],
     url: 'https://lugp-todo-app.netlify.app',
   },
 ];
