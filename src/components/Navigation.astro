@@ -2,7 +2,7 @@
 import '../styles/navbar.css';
 ---
 
-<nav class='hidden lg:block'>
+<custom-nav class='hidden lg:block'>
   <ul class='inline-flex flex-col gap-[15px]'>
     <li>
       <a href='#' class='nav-item-active'>About</a>
@@ -14,4 +14,33 @@ import '../styles/navbar.css';
       <a href='#skillset' class='nav-item'>Skillset</a>
     </li>
   </ul>
-</nav>
+</custom-nav>
+
+<script>
+  class CustomNav extends HTMLElement {
+    constructor() {
+      super();
+
+      const links = this.querySelectorAll('a');
+
+      links.forEach((link) => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const id = link.href.split('#')[1];
+
+          if (id === '') {
+            return window.scrollTo(0, 0);
+          }
+
+          const { top }: any = document
+            .getElementById(id)
+            ?.getBoundingClientRect();
+
+          window.scrollTo(0, document.documentElement.scrollTop + top);
+        });
+      });
+    }
+  }
+
+  customElements.define('custom-nav', CustomNav);
+</script>
