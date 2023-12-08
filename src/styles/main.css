@@ -1,5 +1,5 @@
 html {
-  background-color: #070b30;
+  background-color: #090f3f;
   color: #fff;
   font-family: 'Poppins', sans-serif;
 }
@@ -16,6 +16,11 @@ p {
   p {
     text-wrap: balance;
   }
+}
+
+.subtitle-glass {
+  background: rgba(9, 15, 63, 0.93);
+  backdrop-filter: blur(4.9px);
 }
 
 .projects-link {

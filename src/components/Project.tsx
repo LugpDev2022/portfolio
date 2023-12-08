@@ -64,7 +64,7 @@ const Project: React.FC<Props> = ({
           {techStack.map((tech) => (
             <li
               key={tech}
-              className='bg-cyan-300 text-[#070b30] rounded-3xl px-[10px] py-[3px] text-base'
+              className='bg-cyan-300 text-[#090f3f] rounded-3xl px-[10px] py-[3px] text-base'
             >
               {tech}
             </li>
