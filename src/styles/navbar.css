@@ -1,29 +1,28 @@
-.nav-item {
-  font-weight: 300;
-}
-
 .nav-item-active,
 .nav-item {
+  font-weight: 300;
   position: relative;
 }
 
 .nav-item-active::after,
 .nav-item::after {
-  content: '';
-  width: 35px;
-  height: 2px;
-  position: absolute;
-  left: 0;
   bottom: -3px;
+  content: '';
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transition: 300ms;
+  width: 35px;
 }
 
 .nav-item-active::after {
+  animation: show-from-left linear 300ms;
   background-color: #36dde8;
 }
 
 .nav-item:hover::after {
-  background-color: #fff;
   animation: show-from-left linear 300ms;
+  background-color: #fff;
 }
 
 @keyframes show-from-left {

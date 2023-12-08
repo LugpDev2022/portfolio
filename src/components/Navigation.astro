@@ -5,7 +5,7 @@ import '../styles/navbar.css';
 <custom-nav class='hidden lg:block'>
   <ul class='inline-flex flex-col gap-[15px]'>
     <li>
-      <a href='#' class='nav-item-active'>About</a>
+      <a href='#home' class='nav-item'>About</a>
     </li>
     <li>
       <a href='#projects' class='nav-item'>Projects</a>
@@ -17,18 +17,53 @@ import '../styles/navbar.css';
 </custom-nav>
 
 <script>
+  import { checkActiveLink } from '../helpers/checkActiveLink';
+
   class CustomNav extends HTMLElement {
     constructor() {
       super();
 
       const links = this.querySelectorAll('a');
 
+      const changeActiveLink = () => {
+        const projectsElement = document.getElementById('projects');
+        const skillsetElement = document.getElementById('skillset');
+
+        if (!projectsElement || !skillsetElement) return;
+
+        const projectsPosition = projectsElement.getBoundingClientRect().top;
+        const skillsetPosition = skillsetElement.getBoundingClientRect().top;
+
+        const positions = {
+          home: 0,
+          projects: document.documentElement.scrollTop + projectsPosition,
+          skillset: document.documentElement.scrollTop + skillsetPosition,
+        };
+
+        const activeLink = checkActiveLink(positions);
+
+        links.forEach((link) => {
+          const sectionId = link.href.split('#')[1];
+
+          if (activeLink === sectionId) {
+            link.classList.add('nav-item-active');
+            link.classList.remove('nav-item');
+          } else {
+            link.classList.remove('nav-item-active');
+            link.classList.add('nav-item');
+          }
+        });
+      };
+
+      window.addEventListener('load', changeActiveLink);
+      window.addEventListener('scroll', changeActiveLink);
+
       links.forEach((link) => {
         link.addEventListener('click', (e) => {
           e.preventDefault();
           const id = link.href.split('#')[1];
 
-          if (id === '') {
+          if (id === 'home') {
             return window.scrollTo(0, 0);
           }
 
