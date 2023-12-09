@@ -19,7 +19,7 @@ p {
 }
 
 .subtitle-glass {
-  background: rgba(9, 15, 63, 0.93);
+  background: #090f3fed;
   backdrop-filter: blur(4.9px);
 }
 
