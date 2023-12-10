@@ -8,23 +8,29 @@ import { languages, frameworks, tools } from '../images';
 <section class='mt-[75px] mb-[37.5px]' id='skillset'>
   <Subtitle>Skillset</Subtitle>
 
-  <Skillset
-    path='/images/languages'
-    skills={languages}
-    className='flex justify-around'
-  >
-    Languages
-  </Skillset>
+  <div class='max-w-[100%] overflow-x-hidden'>
+    <Skillset
+      path='/images/languages'
+      skills={languages}
+      className='flex justify-around'
+    >
+      Languages
+    </Skillset>
 
-  <Skillset
-    path='/images/frameworks'
-    skills={frameworks}
-    className='grid grid-cols-3 sm:grid-cols-6 sm:px-8 gap-8 lg:gap-4 justify-items-center'
-  >
-    Frameworks <span class='hidden sm:inline-block'>/ Libraries</span>
-  </Skillset>
+    <Skillset
+      path='/images/frameworks'
+      skills={frameworks}
+      className='grid grid-cols-3 sm:grid-cols-6 sm:px-8 gap-8 lg:gap-4 justify-items-center'
+    >
+      Frameworks <span class='hidden sm:inline-block'>/ Libraries</span>
+    </Skillset>
 
-  <Skillset path='/images/tools' skills={tools} className='flex justify-around'>
-    Tools
-  </Skillset>
+    <Skillset
+      path='/images/tools'
+      skills={tools}
+      className='flex justify-around'
+    >
+      Tools
+    </Skillset>
+  </div>
 </section>

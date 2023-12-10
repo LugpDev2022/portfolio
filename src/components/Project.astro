@@ -9,7 +9,7 @@ interface Props extends ProjectType {
 const { title, image, description, techStack, url, lazy }: Props = Astro.props;
 ---
 
-<article class='project rounded-[10px]'>
+<article class='project rounded-[10px] hidden-element z-0'>
   <div class='sm:hidden flex flex-col gap-5 sm:flex-row py-5 sm:p-5'>
     <div class='sm:order-2'>
       <ProjectTitle client:only='react' url={url}>
