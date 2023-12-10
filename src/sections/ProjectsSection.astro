@@ -1,6 +1,6 @@
 ---
 import Subtitle from '../components/Subtitle.astro';
-import Project from '../components/Project';
+import Project from '../components/Project.astro';
 import Arrow from '../svgs/Arrow.astro';
 
 import { projects } from '../projects';
@@ -10,11 +10,7 @@ import { projects } from '../projects';
   <Subtitle>Projects</Subtitle>
 
   <div class='flex flex-col gap-5 mt-5'>
-    {
-      projects.map((project, i) => (
-        <Project {...project} lazy={i >= 2} client:only='react' />
-      ))
-    }
+    {projects.map((project, i) => <Project {...project} lazy={i >= 2} />)}
   </div>
 
   <a
