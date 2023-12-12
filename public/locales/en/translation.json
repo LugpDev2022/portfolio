@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "description": "I'm passionate about software development, seeking exciting opportunities to start my professional career.",
+    "ogImgAlt": "Screenshot of my awesome portfolio."
+  },
+  "intro": {
+    "quote": "The people who are crazy enough to think they can change the world are the ones who do.",
+    "navigation": {
+      "about": "About",
+      "projects": "Projects",
+      "skillset": "Skillset"
+    }
+  }
+}

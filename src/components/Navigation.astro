@@ -1,17 +1,25 @@
 ---
+import { Trans } from 'astro-i18next/components';
+
 import '../styles/navbar.css';
 ---
 
 <custom-nav class='hidden lg:block'>
   <ul class='inline-flex flex-col gap-[15px]'>
     <li>
-      <a href='#home' class='nav-item'>About</a>
+      <a href='#home' class='nav-item'
+        ><Trans i18nKey='intro.navigation.about'>About</Trans></a
+      >
     </li>
     <li>
-      <a href='#projects' class='nav-item'>Projects</a>
+      <a href='#projects' class='nav-item'
+        ><Trans i18nKey='intro.navigation.projects'>Projects</Trans></a
+      >
     </li>
     <li>
-      <a href='#skillset' class='nav-item'>Skillset</a>
+      <a href='#skillset' class='nav-item'
+        ><Trans i18nKey='intro.navigation.skillset'>Skillset</Trans></a
+      >
     </li>
   </ul>
 </custom-nav>
