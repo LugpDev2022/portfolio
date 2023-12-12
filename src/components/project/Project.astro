@@ -8,7 +8,7 @@ interface Props extends ProjectType {
 }
 ---
 
-<article class='project rounded-[10px] hidden-element z-0'>
+<article class='project rounded-[10px] hidden-element z-0' transition:persist>
   <div class='sm:hidden flex flex-col gap-5 sm:flex-row py-5 sm:p-5'>
     <ProjectContent {...Astro.props} />
   </div>

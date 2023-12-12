@@ -1,4 +1,6 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
+
 import i18next, { t } from 'i18next';
 import { HeadHrefLangs } from 'astro-i18next/components';
 
@@ -25,6 +27,7 @@ import '@fontsource/playfair-display';
 
     <script src='../helpers/scrollAnimationObserver.ts'></script>
     <title>Luis Cervantes - Portfolio</title>
+    <ViewTransitions />
   </head>
   <body
     class='px-4 py-5 sm:px-[50px] lg:pt-[50px] xl:px-[100px] text-xl flex flex-col lg:flex-row lg:gap-20 xl:gap-36 max-w-screen-xl mx-auto'
