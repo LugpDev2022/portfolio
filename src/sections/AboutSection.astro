@@ -1,14 +1,18 @@
 ---
+import { Trans } from 'astro-i18next/components';
+
 import Subtitle from '../components/Subtitle.astro';
 ---
 
 <section>
-  <Subtitle>About</Subtitle>
+  <Subtitle><Trans i18nKey='intro.navigation.about'>About</Trans></Subtitle>
 
   <p>
-    I'm passionate about software development, seeking exciting opportunities to
-    start my professional career. Although I lack direct work experience, I have
-    been dedicating time and effort to personal projects with the goal of
-    enhancing my skills in both web development and design.
+    <Trans i18nKey='about.description'>
+      I'm passionate about software development, seeking exciting opportunities
+      to start my professional career. Although I lack direct work experience, I
+      have been dedicating time and effort to personal projects with the goal of
+      enhancing my skills in both web development and design.
+    </Trans>
   </p>
 </section>
