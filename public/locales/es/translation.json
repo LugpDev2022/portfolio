@@ -9,6 +9,12 @@
       "about": "Sobre Mi",
       "projects": "Proyectos",
       "skillset": "Habilidades"
+    },
+    "contacts": {
+      "linkedinAlt": "logo de linkedin",
+      "githubAlt": "logo de github",
+      "twitterAlt": "logo de twitter",
+      "fiverrAlt": "logo de fiverr"
     }
   },
   "about": {
