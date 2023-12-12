@@ -23,7 +23,15 @@
   "projects": {
     "arrowAlt": "imagen de flecha rotada",
     "imgAlt": "captura de pantalla del proyecto",
-    "link": "Ver más proyectos"
+    "link": "Ver más proyectos",
+    "projectsDesc": {
+      "0": "Aplicación web diseñada para organizar tus tareas diarias de manera efectiva.",
+      "1": "Calculadora web para ayudarte con operaciones matemáticas. Cuenta con un modo oscuro y uno claro.",
+      "2": "Accede a los mejores consejos con esta aplicación web.",
+      "3": "Aplicación sencilla para tareas básicas relacionadas con el tiempo, como ver la hora y crear temporizadores.",
+      "4": "Pagina de inicio de un sitio web de noticias.",
+      "5": "Página típica de error 404 No Encontrado."
+    }
   },
   "skillset": {
     "languages": "Lenguajes",

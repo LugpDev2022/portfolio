@@ -1,14 +1,17 @@
 ---
 import { t } from 'i18next';
+import { Trans } from 'astro-i18next/components';
 
 import ProjectTitle from './ProjectTitle';
 import type { Project as ProjectType } from '../../projects';
 
 interface Props extends ProjectType {
   lazy?: boolean;
+  index: number;
 }
 
-const { title, image, description, techStack, url, lazy }: Props = Astro.props;
+const { title, image, description, techStack, url, lazy, index }: Props =
+  Astro.props;
 ---
 
 <div class='sm:order-2'>
@@ -24,7 +27,9 @@ const { title, image, description, techStack, url, lazy }: Props = Astro.props;
       />
     </>
   </ProjectTitle>
-  <p class='mt-[5px]'>{description}</p>
+  <p class='mt-[5px]'>
+    <Trans i18nKey={`projects.projectsDesc.${index}`}>{description}</Trans>
+  </p>
 
   <ul class='flex flex-wrap gap-[10px] mt-5'>
     {

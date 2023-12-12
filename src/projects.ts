@@ -26,8 +26,7 @@ export const projects: Project[] = [
   {
     title: 'Advice Generator',
     image: '/images/projects/adviceGenerator.png',
-    description:
-      "Access the finest advice available with this web application, catering to everyone's needs.",
+    description: 'Get some of the best advices with this web application.',
     techStack: ['React', 'Bootstrap'],
     url: 'https://advice-generator-lugpdev2022.netlify.app/',
   },
