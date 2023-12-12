@@ -1,0 +1,23 @@
+---
+import type { Project as ProjectType } from '../../projects';
+import ProjectContent from '../project/ProjectContent.astro';
+
+interface Props extends ProjectType {
+  lazy?: boolean;
+}
+---
+
+<article class='project rounded-[10px] hidden-element z-0'>
+  <div class='sm:hidden flex flex-col gap-5 sm:flex-row py-5 sm:p-5'>
+    <ProjectContent {...Astro.props} />
+  </div>
+
+  <a
+    href={Astro.props.url}
+    rel='noreferrer'
+    target='_blank'
+    class='hidden sm:flex gap-5 sm:flex-row py-5 sm:p-5'
+  >
+    <ProjectContent {...Astro.props} />
+  </a>
+</article>
