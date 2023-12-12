@@ -1,0 +1,17 @@
+---
+import i18next, { t } from 'i18next';
+const { language } = i18next;
+---
+
+<a
+  href={`/${language === 'es' ? '' : 'es'}`}
+  class='inline-flex gap-[30px] px-[15px] py-[10px] border-[1px] border-cyan-300 rounded-full my-8'
+>
+  <img
+    src={`/images/flags/${language}.png`}
+    class={language === 'es' ? 'order-2' : ''}
+    alt={t('intro.languageSwitchAlt')}
+  />
+
+  <span class='uppercase'>{language}</span>
+</a>
