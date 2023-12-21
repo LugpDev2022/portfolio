@@ -1,6 +1,5 @@
 ---
 import i18next, { t } from 'i18next';
-import { HeadHrefLangs } from 'astro-i18next/components';
 
 import '../styles/main.css';
 
@@ -21,7 +20,8 @@ import '@fontsource/playfair-display';
     <meta property='og:image:alt' content={t('metadata.ogImgAlt')} />
 
     <link rel='shortcut icon' href='/favicon.ico' type='image/x-icon' />
-    <HeadHrefLangs />
+    <link rel='alternate' hreflang='es' href='https://luiscerv.tech/es' />
+    <link rel='alternate' hreflang='en' href='https://luiscerv.tech/' />
 
     <script src='../helpers/scrollAnimationObserver.ts'></script>
     <title>Luis Cervantes - Portfolio</title>
