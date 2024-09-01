@@ -5,13 +5,13 @@ const { language } = i18next;
 
 <a
   href={`/${language === 'es' ? '' : 'es'}`}
-  class='inline-flex gap-[30px] px-[15px] py-[10px] border-[1px] border-cyan-300 rounded-full my-8 hover:text-cyan-300 transition'
+  class='inline-flex gap-[25px] px-[15px] py-[10px] border-[1px] border-cyan-300 rounded-full my-8 hover:text-cyan-300 transition'
 >
   <img
     src={`/images/flags/${language}.png`}
-    class={`${language === 'es' ? 'order-2' : ''} w-[30px]`}
+    class={`${language === 'es' ? 'order-2' : ''} w-[28px]`}
     alt={t('intro.languageSwitchAlt')}
   />
 
-  <span class='uppercase text-xl'>{language}</span>
+  <span class='uppercase text-lg'>{language}</span>
 </a>
