@@ -12,7 +12,7 @@ const ProjectTitle: React.FC<Props> = ({ children, url }) => {
     window.innerWidth < MOBILE_BREAKPOINT
   );
 
-  const className = 'inline-flex gap-[10px] project-title';
+  const className = 'inline-flex gap-[10px] project-title items-center';
 
   useEffect(() => {
     const handler = () => {
