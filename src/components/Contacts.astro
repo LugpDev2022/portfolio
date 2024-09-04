@@ -1,40 +1,38 @@
 ---
-import { t } from 'i18next';
+import { BsTwitterX } from 'react-icons/bs';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { TbBrandFiverr } from 'react-icons/tb';
 ---
 
-<ul class='flex gap-7 mt-10 mb-14'>
+<ul class='flex items-center gap-7 mt-10 mb-14'>
   <li>
     <a
       target='_blank'
       rel='noreferrer'
       href='https://mx.linkedin.com/in/luiscerv'
+      class='transition-all hover:text-cyan-300'
     >
-      <img
-        src='/images/logos/linkedin.svg'
-        alt={t('intro.contacts.linkedinAlt')}
-        width='33px'
-        height='33px'
-      />
+      <FaLinkedin size={30} />
     </a>
   </li>
   <li>
-    <a target='_blank' rel='noreferrer' href='https://github.com/LugpDev2022'>
-      <img
-        src='/images/logos/github.svg'
-        alt={t('intro.contacts.githubAlt')}
-        width='33px'
-        height='33px'
-      />
+    <a
+      target='_blank'
+      rel='noreferrer'
+      href='https://github.com/LugpDev2022'
+      class='transition-all hover:text-cyan-300'
+    >
+      <FaGithub size={30} />
     </a>
   </li>
   <li>
-    <a target='_blank' rel='noreferrer' href='https://twitter.com/LugpDev2022'>
-      <img
-        src='/images/logos/twitter.svg'
-        alt={t('intro.contacts.twitterAlt')}
-        width='33px'
-        height='33px'
-      />
+    <a
+      target='_blank'
+      rel='noreferrer'
+      href='https://twitter.com/LugpDev2022'
+      class='transition-all hover:text-cyan-300'
+    >
+      <BsTwitterX size={30} />
     </a>
   </li>
   <li>
@@ -42,13 +40,9 @@ import { t } from 'i18next';
       target='_blank'
       rel='noreferrer'
       href='https://www.fiverr.com/lugpdev2022'
+      class='transition-all hover:text-cyan-300'
     >
-      <img
-        src='/images/logos/fiverr.svg'
-        alt={t('intro.contacts.fiverrAlt')}
-        width='33px'
-        height='33px'
-      />
+      <TbBrandFiverr size={30} />
     </a>
   </li>
 </ul>
