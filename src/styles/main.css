@@ -39,18 +39,14 @@ p {
   align-items: center;
   display: inline-flex;
   gap: 10px;
+  margin-top: 10px;
   transition: 300ms;
 }
 
 .projects-link:hover {
   @apply text-cyan-300;
-  gap: 20px;
+  gap: 15px;
 }
-
-.projects-link:hover > svg > path {
-  @apply fill-cyan-300;
-}
-
 .project .rotated-arrow {
   opacity: 0;
   transition: 300ms;

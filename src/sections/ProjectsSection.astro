@@ -1,9 +1,9 @@
 ---
 import { Trans } from 'astro-i18next/components';
+import { MdOutlineArrowRightAlt } from 'react-icons/md';
 
 import Subtitle from '../components/Subtitle.astro';
 import Project from '../components/project/Project.astro';
-import Arrow from '../svgs/Arrow.astro';
 
 import { projects } from '../projects';
 ---
@@ -24,9 +24,10 @@ import { projects } from '../projects';
 
   <a
     href='https://github.com/LugpDev2022?tab=repositories'
-    class='projects-link mt-[10px]'
+    class='projects-link'
     target='_blank'
     rel='noreferrer'
-    ><Trans i18nKey='projects.link'>See more projects</Trans> <Arrow /></a
-  >
+    ><Trans i18nKey='projects.link'>See more projects</Trans>
+    <MdOutlineArrowRightAlt size={30} />
+  </a>
 </section>
