@@ -10,22 +10,22 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-  // {
-  //   title: 'Nextflix',
-  //   image: '/images/projects/nextflix.png',
-  //   description: {
-  //     en: 'This project is a Netflix Clone built for educational purposes.',
-  //     es: '',
-  //   },
-  //   techStack: [],
-  //   url: 'https://nextflix-lugpdev.vercel.app/en/landing',
-  // },
+  {
+    title: 'Nextflix',
+    image: '/images/projects/nextflix.png',
+    description: {
+      en: 'This project is a Netflix Clone built for educational purposes.',
+      es: 'Clon de Netflix creado con propósitos educativos.',
+    },
+    techStack: ['Nextjs', 'Prisma', 'Tailwind', 'Typescript'],
+    url: 'https://nextflix-lugpdev.vercel.app/en/landing',
+  },
   {
     title: 'Todo App',
     image: '/images/projects/todoApp.png',
     description: {
       en: 'Web application designed for organizing your daily tasks effectively.',
-      es: 'Aplicación web diseñada para organizar tus tareas diarias de manera efectiva',
+      es: 'Aplicación web diseñada para organizar tus tareas diarias de manera efectiva.',
     },
     techStack: ['React', 'Bootstrap'],
     url: 'https://lugp-todo-app.netlify.app',
@@ -75,7 +75,7 @@ export const projects: Project[] = [
     image: '/images/projects/not-found.png',
     description: {
       en: 'Typical 404 Not Found page.',
-      es: 'Página típica de error 404 No Encontrado',
+      es: 'Página típica de error 404 No Encontrado.',
     },
     techStack: ['Astro', 'Tailwind', 'Css'],
     url: 'https://lugp-not-found.netlify.app/',
