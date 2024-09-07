@@ -1,6 +1,5 @@
 ---
 import { t } from 'i18next';
-import { Trans } from 'astro-i18next/components';
 import { MdOutlineArrowOutward } from 'react-icons/md';
 
 import ProjectTitle from './ProjectTitle';
@@ -24,7 +23,7 @@ const { title, image, description, techStack, url, lazy, index }: Props =
     </>
   </ProjectTitle>
   <p class='mt-[5px]'>
-    <Trans i18nKey={`projects.projectsDesc.${index}`}>{description}</Trans>
+    {t(`projects.projectsDesc.${index}`)}
   </p>
 
   <ul class='flex flex-wrap gap-[10px] mt-5'>

@@ -1,5 +1,5 @@
 ---
-import { Trans } from 'astro-i18next/components';
+import { t } from 'i18next';
 import { MdOutlineArrowRightAlt } from 'react-icons/md';
 
 import Subtitle from '../components/Subtitle.astro';
@@ -10,7 +10,7 @@ import { projects } from '../projects';
 
 <section class='mt-[75px]' id='projects'>
   <Subtitle>
-    <Trans i18nKey='intro.navigation.projects'>Projects</Trans>
+    {t('intro.navigation.projects')}
   </Subtitle>
 
   <!-- TODO: Translate projects description -->
@@ -27,7 +27,8 @@ import { projects } from '../projects';
     class='projects-link'
     target='_blank'
     rel='noreferrer'
-    ><Trans i18nKey='projects.link'>See more projects</Trans>
+  >
+    {t('projects.link')}
     <MdOutlineArrowRightAlt size={30} />
   </a>
 </section>
