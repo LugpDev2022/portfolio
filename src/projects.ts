@@ -13,8 +13,10 @@ export const projects: Project[] = [
   // {
   //   title: 'Nextflix',
   //   image: '/images/projects/nextflix.png',
-  //   description:
-  //     'This project is a Netflix Clone built for educational purposes.',
+  //   description: {
+  //     en: 'This project is a Netflix Clone built for educational purposes.',
+  //     es: '',
+  //   },
   //   techStack: [],
   //   url: 'https://nextflix-lugpdev.vercel.app/en/landing',
   // },

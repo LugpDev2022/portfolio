@@ -1,9 +1,11 @@
 ---
-import { t } from 'i18next';
+import i18next, { t } from 'i18next';
 import { MdOutlineArrowOutward } from 'react-icons/md';
 
 import ProjectTitle from './ProjectTitle';
 import type { Project as ProjectType } from '../../projects';
+
+const { language } = i18next as { language: 'es' | 'en' };
 
 interface Props extends ProjectType {
   lazy?: boolean;
@@ -23,7 +25,7 @@ const { title, image, description, techStack, url, lazy, index }: Props =
     </>
   </ProjectTitle>
   <p class='mt-[5px]'>
-    {t(`projects.projectsDesc.${index}`)}
+    {description[language]}
   </p>
 
   <ul class='flex flex-wrap gap-[10px] mt-5'>

@@ -17,15 +17,7 @@
   },
   "projects": {
     "imgAlt": "project screenshot",
-    "link": "See more projects",
-    "projectsDesc": {
-      "0": "Web application designed for organizing your daily tasks effectively",
-      "1": "Web calculator for helping you with mathematical operations. It has dark and light mode.",
-      "2": "Get some of the best advices with this web application.",
-      "3": "Small app for basic time tasks like watching the hour and creating timers.",
-      "4": "Homepage of a news website.",
-      "5": "Typical 404 Not Found page."
-    }
+    "link": "See more projects"
   },
   "skillset": {
     "languages": "Languages",
