@@ -1,5 +1,5 @@
 ---
-import { Trans } from 'astro-i18next/components';
+import { t } from 'i18next';
 
 import Subtitle from '../components/Subtitle.astro';
 import Skillset from '../components/Skillset.astro';
@@ -9,7 +9,7 @@ import { languages, frameworks, tools } from '../images';
 
 <section class='mt-[75px] mb-[37.5px]' id='skillset'>
   <Subtitle>
-    <Trans i18nKey='intro.navigation.skillset'>Skillset</Trans>
+    {t('intro.navigation.skillset')}
   </Subtitle>
 
   <div class='max-w-[100%] overflow-x-hidden'>
@@ -18,7 +18,7 @@ import { languages, frameworks, tools } from '../images';
       skills={languages}
       className='flex justify-around'
     >
-      <Trans i18nKey='skillset.languages'>Languages</Trans>
+      {t('intro.languages')}
     </Skillset>
 
     <Skillset
@@ -27,7 +27,7 @@ import { languages, frameworks, tools } from '../images';
       className='grid grid-cols-3 sm:grid-cols-6 sm:px-8 gap-8 lg:gap-4 justify-items-center'
     >
       Frameworks <span class='hidden sm:inline-block'
-        >/ <Trans i18nKey='skillset.libraries'>Libraries</Trans></span
+        >/ {t('skillset.libraries')}</span
       >
     </Skillset>
 
@@ -36,7 +36,7 @@ import { languages, frameworks, tools } from '../images';
       skills={tools}
       className='flex justify-around'
     >
-      <Trans i18nKey='skillset.tools'>Tools</Trans>
+      {t('skillset.tools')}
     </Skillset>
   </div>
 </section>
