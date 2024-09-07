@@ -31,5 +31,9 @@
     "languages": "Lenguajes",
     "libraries": "Librerías",
     "tools": "Herramientas"
+  },
+  "education": {
+    "self-taught": "<0>Educación Autodidacta</0> | 2021 - Presente",
+    "highschool": "Preparatoria | <0>Tecnológico de Monterrey</0> | 2022 - Presente"
   }
 }

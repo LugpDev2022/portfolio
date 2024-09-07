@@ -31,5 +31,9 @@
     "languages": "Languages",
     "libraries": "Libraries",
     "tools": "Tools"
+  },
+  "education": {
+    "self-taught": "<0>Self-taught Education</0> | 2021 - Present",
+    "highschool": "Highschool | <0>Tecnológico de Monterrey</0> | 2022 - Present"
   }
 }

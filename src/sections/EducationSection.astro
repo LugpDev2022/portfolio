@@ -1,5 +1,6 @@
 ---
 import { t } from 'i18next';
+import { Trans } from 'astro-i18next/components';
 
 import Subtitle from '../components/Subtitle.astro';
 ---
@@ -9,8 +10,17 @@ import Subtitle from '../components/Subtitle.astro';
     {t('intro.navigation.education')}
   </Subtitle>
 
-  <ul>
-    <li></li>
-    <li></li>
+  <ul class='flex flex-col gap-2.5'>
+    <li><b>CS50x</b> | Harvard University | 2024</li>
+    <li>
+      <Trans i18nKey='education.self-taught'>
+        <b>Self-taught Education</b> | 2021 - Present
+      </Trans>
+    </li>
+    <li>
+      <Trans i18nKey='education.highschool'>
+        Highschool | <b>Tecnológico de Monterrey</b> | 2022 - Present
+      </Trans>
+    </li>
   </ul>
 </section>
