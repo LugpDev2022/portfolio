@@ -1,15 +1,14 @@
 ---
-import { changeLanguage } from "i18next";
-import { Trans } from "astro-i18next/components";
-import Navigation from "../components/Navigation.astro";
-import Contacts from "../components/Contacts.astro";
-import Layout from "../layouts/Layout.astro";
-import AboutSection from "../sections/AboutSection.astro";
-import ProjectsSection from "../sections/ProjectsSection.astro";
-import SkillsetSection from "../sections/SkillsetSection.astro";
-import LanguageSwitch from "../components/LanguageSwitch.astro";
+import { changeLanguage, t } from 'i18next';
+import Navigation from '../components/Navigation.astro';
+import Contacts from '../components/Contacts.astro';
+import Layout from '../layouts/Layout.astro';
+import AboutSection from '../sections/AboutSection.astro';
+import ProjectsSection from '../sections/ProjectsSection.astro';
+import SkillsetSection from '../sections/SkillsetSection.astro';
+import LanguageSwitch from '../components/LanguageSwitch.astro';
 
-changeLanguage("en");
+changeLanguage('en');
 ---
 
 <Layout>
@@ -25,10 +24,7 @@ changeLanguage("en");
 
         <blockquote class='mb-2'>
           <p>
-            “<Trans i18nKey='intro.quote'>
-              The people who are crazy enough to think they can change the world
-              are the ones who do.
-            </Trans>” - Steve Jobs
+            "{t('intro.quote')}" - Steve Jobs
           </p>
         </blockquote>
       </div>
@@ -40,8 +36,8 @@ changeLanguage("en");
   </section>
 
   <main>
-    <AboutSection />
+    <!-- <AboutSection />
     <ProjectsSection />
-    <SkillsetSection />
+    <SkillsetSection /> -->
   </main>
 </Layout>
