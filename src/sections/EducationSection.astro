@@ -1,17 +1,16 @@
 ---
-import { Trans } from 'astro-i18next/components';
+import { t } from 'i18next';
+
 import Subtitle from '../components/Subtitle.astro';
 ---
 
 <section class='mt-[75px]' id='education'>
   <Subtitle>
-    <Trans i18nKey='intro.navigation.Education'>Education</Trans>
+    {t('intro.navigation.education')}
   </Subtitle>
 
   <ul>
-    <li>
-      <Trans>High School: Tecnológico de Monterrey (2022-Present)</Trans>
-    </li>
+    <li></li>
     <li></li>
   </ul>
 </section>
