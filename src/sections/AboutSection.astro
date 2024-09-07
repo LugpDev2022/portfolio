@@ -1,18 +1,16 @@
 ---
 import { Trans } from 'astro-i18next/components';
+import { t } from 'i18next';
 
 import Subtitle from '../components/Subtitle.astro';
 ---
 
 <section class='text-lg'>
-  <Subtitle><Trans i18nKey='intro.navigation.about'>About</Trans></Subtitle>
+  <Subtitle>
+    {t('intro.navigation.about')}
+  </Subtitle>
 
   <p>
-    <Trans i18nKey='about.description'>
-      I'm passionate about software development, seeking exciting opportunities
-      to start my professional career. Although I lack direct work experience, I
-      have been dedicating time and effort to personal projects with the goal of
-      enhancing my skills in both web development and design.
-    </Trans>
+    {t('about.description')}
   </p>
 </section>
