@@ -17,13 +17,13 @@ export const checkActiveLink = (locations: Positions): ActiveLink => {
     return 'home';
   }
 
-  if (currentScroll < locations.skillset - 400) {
-    return 'projects';
+  if (currentScroll < locations.projects - 100) {
+    return 'skillset';
   }
 
   const educationElement = document.querySelector('#education');
   if (!educationElement) {
-    return 'skillset';
+    return 'projects';
   }
 
   const educationRect = educationElement.getBoundingClientRect();
@@ -33,5 +33,5 @@ export const checkActiveLink = (locations: Positions): ActiveLink => {
     educationRect.bottom <= viewportHeight &&
     educationRect.right <= viewportWidth;
 
-  return isInViewport ? 'education' : 'skillset';
+  return isInViewport ? 'education' : 'projects';
 };
