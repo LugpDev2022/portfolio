@@ -1,17 +1,19 @@
 ---
-import i18next, { t } from 'i18next';
-const { language } = i18next;
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <a
-  href={`/${language === 'es' ? '' : 'es'}`}
+  href={`/${lang === 'es' ? '' : 'es'}`}
   class='inline-flex gap-[25px] px-[15px] py-[10px] border-[1px] border-cyan-300 rounded-full my-8 hover:text-cyan-300 transition'
 >
   <img
-    src={`/images/flags/${language}.png`}
-    class={`${language === 'es' ? 'order-2' : ''} w-[28px]`}
-    alt={t('intro.languageSwitchAlt')}
+    src={`/images/flags/${lang}.png`}
+    class={`${lang === 'es' ? 'order-2' : ''} w-[28px]`}
+    alt={t('intro.languageSwitchAlt') as string}
   />
 
-  <span class='uppercase text-lg'>{language}</span>
+  <span class='uppercase text-lg'>{lang}</span>
 </a>
