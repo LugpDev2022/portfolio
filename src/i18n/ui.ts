@@ -7,11 +7,9 @@ export const defaultLang = 'en';
 
 export const ui = {
   en: {
-    metadata: {
-      description:
-        "I'm passionate about software development, seeking exciting opportunities to start my professional career.",
-      ogImgAlt: 'Screenshot of my awesome portfolio.',
-    },
+    'metadata.description':
+      "I'm passionate about software development, seeking exciting opportunities to start my professional career.",
+    'metadata.ogImgAlt': 'Screenshot of my awesome portfolio.',
     'intro.navigation.about': 'About',
     'intro.navigation.projects': 'Projects',
     'intro.navigation.skillset': 'Skillset',
@@ -38,11 +36,9 @@ export const ui = {
     },
   },
   es: {
-    metadata: {
-      description:
-        'Soy un apasionado de la informática en busca de emocionantes oportunidades para dar inicio a mi carrera profesional.',
-      ogImgAlt: 'Captura de pantalla de mi asombroso portafolio.',
-    },
+    'metadata.description':
+      'Soy un apasionado de la informática en busca de emocionantes oportunidades para dar inicio a mi carrera profesional.',
+    'metadata.ogImgAlt': 'Captura de pantalla de mi asombroso portafolio.',
     'intro.navigation.about': 'Sobre Mi',
     'intro.navigation.projects': 'Proyectos',
     'intro.navigation.skillset': 'Habilidades',

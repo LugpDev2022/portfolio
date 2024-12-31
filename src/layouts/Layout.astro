@@ -1,5 +1,8 @@
 ---
-import i18next, { t } from 'i18next';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 import '../styles/main.css';
 
@@ -9,15 +12,15 @@ import '@fontsource/playfair-display';
 ---
 
 <!doctype html>
-<html lang={i18next.language} class='scroll-smooth'>
+<html lang={lang} class='scroll-smooth'>
   <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width' />
     <meta name='generator' content={Astro.generator} />
     <meta name='robots' content='index, follow' />
-    <meta name='description' content={t('metadata.description')} />
+    <meta name='description' content={t('metadata.description') as string} />
     <meta property='og:image' content='/images/screenshot.png' />
-    <meta property='og:image:alt' content={t('metadata.ogImgAlt')} />
+    <meta property='og:image:alt' content={t('metadata.ogImgAlt') as string} />
 
     <link rel='shortcut icon' href='/favicon.ico' type='image/x-icon' />
     <link rel='alternate' hreflang='es' href='https://luiscerv.tech/es' />
