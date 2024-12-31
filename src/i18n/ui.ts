@@ -27,11 +27,11 @@ export const ui = {
     'skillset.libraries': 'Libraries',
     'skillset.tools': 'Tools',
 
-    education: {
-      'self-taught': '<0>Self-taught Education</0> | 2021 - Present',
-      highschool:
-        'Highschool | <0>Tecnológico de Monterrey</0> | 2022 - Present',
-    },
+    'education.self-taught.1': 'Self-taught Education',
+    'education.self-taught.2': '2021 - Present',
+
+    'education.highschool.1': 'Highschool',
+    'education.highschool.2': '2022 - Present',
   },
   es: {
     'metadata.description':
@@ -53,10 +53,9 @@ export const ui = {
     'skillset.libraries': 'Librerías',
     'skillset.tools': 'Herramientas',
 
-    education: {
-      'self-taught': '<0>Educación Autodidacta</0> | 2021 - Presente',
-      highschool:
-        'Preparatoria | <0>Tecnológico de Monterrey</0> | 2022 - Presente',
-    },
+    'education.self-taught.1': 'Educación Autodidacta',
+    'education.self-taught.2': '2021 - Presente',
+    'education.highschool.1': 'Preparatoria',
+    'education.highschool.2': '2022 - Presente',
   },
 } as const;

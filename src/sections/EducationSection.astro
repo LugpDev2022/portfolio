@@ -1,6 +1,9 @@
 ---
-import { t } from 'i18next';
-import { Trans } from 'astro-i18next/components';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 
 import Subtitle from '../components/Subtitle.astro';
 ---
@@ -13,14 +16,10 @@ import Subtitle from '../components/Subtitle.astro';
   <ul class='flex flex-col gap-2.5'>
     <li><b>CS50x</b> | Harvard University | 2024</li>
     <li>
-      <Trans i18nKey='education.self-taught'>
-        <b>Self-taught Education</b> | 2021 - Present
-      </Trans>
+        <b>{t("education.self-taught.1")}</b> | {t("education.self-taught.2")} 
     </li>
     <li>
-      <Trans i18nKey='education.highschool'>
-        Highschool | <b>Tecnológico de Monterrey</b> | 2022 - Present
-      </Trans>
+       {t("education.highschool.1")} | <b>Tecnológico de Monterrey</b> | {t("education.highschool.2")} 
     </li>
   </ul>
 </section>
