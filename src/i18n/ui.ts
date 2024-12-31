@@ -24,11 +24,11 @@ export const ui = {
       imgAlt: 'project screenshot',
       link: 'See more projects',
     },
-    skillset: {
-      languages: 'Languages',
-      libraries: 'Libraries',
-      tools: 'Tools',
-    },
+
+    'skillset.languages': 'Languages',
+    'skillset.libraries': 'Libraries',
+    'skillset.tools': 'Tools',
+
     education: {
       'self-taught': '<0>Self-taught Education</0> | 2021 - Present',
       highschool:
@@ -52,11 +52,11 @@ export const ui = {
       imgAlt: 'captura de pantalla del proyecto',
       link: 'Ver más proyectos',
     },
-    skillset: {
-      languages: 'Lenguajes',
-      libraries: 'Librerías',
-      tools: 'Herramientas',
-    },
+
+    'skillset.languages': 'Lenguajes',
+    'skillset.libraries': 'Librerías',
+    'skillset.tools': 'Herramientas',
+
     education: {
       'self-taught': '<0>Educación Autodidacta</0> | 2021 - Presente',
       highschool:
