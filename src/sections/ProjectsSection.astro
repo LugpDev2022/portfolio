@@ -1,5 +1,9 @@
 ---
-import { t } from 'i18next';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 import { MdOutlineArrowRightAlt } from 'react-icons/md';
 
 import Subtitle from '../components/Subtitle.astro';

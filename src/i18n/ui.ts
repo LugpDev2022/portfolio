@@ -20,10 +20,8 @@ export const ui = {
     'about.description':
       "I'm passionate about software development, seeking exciting opportunities to start my professional career. Although I lack direct work experience, I have been dedicating time and effort to personal projects with the goal of enhancing my skills in both web development and design.",
 
-    projects: {
-      imgAlt: 'project screenshot',
-      link: 'See more projects',
-    },
+    'projects.imgAlt': 'project screenshot',
+    'projects.link': 'See more projects',
 
     'skillset.languages': 'Languages',
     'skillset.libraries': 'Libraries',
@@ -48,10 +46,8 @@ export const ui = {
     'about.description':
       'Soy un apasionado de la informática en busca de emocionantes oportunidades para dar inicio a mi carrera profesional. Aunque carezco de experiencia laboral directa, he estado dedicando tiempo y esfuerzo a proyectos personales con el objetivo de mejorar mis habilidades tanto en desarrollo como en diseño web.',
 
-    projects: {
-      imgAlt: 'captura de pantalla del proyecto',
-      link: 'Ver más proyectos',
-    },
+    'projects.imgAlt': 'captura de pantalla del proyecto',
+    'projects.link': 'Ver más proyectos',
 
     'skillset.languages': 'Lenguajes',
     'skillset.libraries': 'Librerías',
