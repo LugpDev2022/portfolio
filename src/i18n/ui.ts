@@ -6,6 +6,72 @@ export const languages = {
 export const defaultLang = 'en';
 
 export const ui = {
-  en: {},
-  es: {},
+  en: {
+    metadata: {
+      description:
+        "I'm passionate about software development, seeking exciting opportunities to start my professional career.",
+      ogImgAlt: 'Screenshot of my awesome portfolio.',
+    },
+    intro: {
+      navigation: {
+        about: 'About',
+        projects: 'Projects',
+        skillset: 'Skillset',
+        education: 'Education',
+      },
+      languageSwitchAlt: 'England flag',
+    },
+    about: {
+      description:
+        "I'm passionate about software development, seeking exciting opportunities to start my professional career. Although I lack direct work experience, I have been dedicating time and effort to personal projects with the goal of enhancing my skills in both web development and design.",
+    },
+    projects: {
+      imgAlt: 'project screenshot',
+      link: 'See more projects',
+    },
+    skillset: {
+      languages: 'Languages',
+      libraries: 'Libraries',
+      tools: 'Tools',
+    },
+    education: {
+      'self-taught': '<0>Self-taught Education</0> | 2021 - Present',
+      highschool:
+        'Highschool | <0>Tecnológico de Monterrey</0> | 2022 - Present',
+    },
+  },
+  es: {
+    metadata: {
+      description:
+        'Soy un apasionado de la informática en busca de emocionantes oportunidades para dar inicio a mi carrera profesional.',
+      ogImgAlt: 'Captura de pantalla de mi asombroso portafolio.',
+    },
+    intro: {
+      navigation: {
+        about: 'Sobre Mi',
+        projects: 'Proyectos',
+        skillset: 'Habilidades',
+        education: 'Educación',
+      },
+      languageSwitchAlt: 'bandera de España',
+    },
+    about: {
+      description:
+        'Soy un apasionado de la informática en busca de emocionantes oportunidades para dar inicio a mi carrera profesional. Aunque carezco de experiencia laboral directa, he estado dedicando tiempo y esfuerzo a proyectos personales con el objetivo de mejorar mis habilidades tanto en desarrollo como en diseño web.',
+    },
+    projects: {
+      imgAlt: 'captura de pantalla del proyecto',
+      link: 'Ver más proyectos',
+    },
+    skillset: {
+      languages: 'Lenguajes',
+      libraries: 'Librerías',
+      tools: 'Herramientas',
+    },
+    education: {
+      'self-taught': '<0>Educación Autodidacta</0> | 2021 - Presente',
+      highschool:
+        'Preparatoria | <0>Tecnológico de Monterrey</0> | 2022 - Presente',
+    },
+  },
 } as const;
