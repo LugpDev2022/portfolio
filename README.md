@@ -1,10 +1,18 @@
 # Personal Portfolio
 
-<!-- TODO: Add introduction -->
+This is my personal portfolio project built using Astro, React, and Tailwind CSS. It showcases various projects, skills, and contact information.
 
-<!-- TODO: Add table of contents -->
+## Table of Contents
+
+- [Installation](#installation)
+- [Commands](#commands)
+- [Project Structure](#project-structure)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
 
 ## Installation
+
+To get started with this project, clone the repository and install the dependencies:
 
 ```sh
 git clone https://github.com/LugpDev2022/portfolio.git
@@ -25,22 +33,37 @@ All commands are run from the root of the project, from a terminal:
 
 ## Project Structure
 
-<!-- TODO: Finish folder structure -->
-
 This project has the following structure:
 
 ```text
 /
 ├── public/
 │   ├── images/
-│   ├── locales/
-│   └── favicon.ico
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
+│   ├── helpers/
+│   ├── i18n/
 │   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   ├── pages/
+│   │   ├── index.astro
+│   │   └── es/
+│   │       └── index.astro
+│   ├── sections/
+│   ├── styles/
+└── README.md
 ```
+
+## Technologies Used
+
+- Astro: Static site generator
+- React: JavaScript library for building user interfaces
+- Tailwind CSS: Utility-first CSS framework
+- TypeScript: Typed superset of JavaScript
+
+## Features
+
+- Multi-language support (English and Spanish)
+- Responsive design
+- Smooth scrolling and animations
+- Project showcase with descriptions and tech stack
+- Contact information with social media links
