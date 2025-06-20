@@ -19,7 +19,7 @@ export const ui = {
     'intro.languageSwitchAlt': 'England flag',
 
     'about.description':
-      "I'm passionate about software development, seeking exciting opportunities to start my professional career. Although I lack direct work experience, I have been dedicating time and effort to personal projects with the goal of enhancing my skills in both web development and design.",
+      'I’m a self-taught front-end developer with experience building modern applications and websites using technologies like React, TypeScript, Tailwind CSS, and Next.js. I focus on creating responsive, accessible, and SEO-optimized experiences.',
 
     'projects.imgAlt': 'project screenshot',
     'projects.link': 'See more projects',
@@ -45,7 +45,7 @@ export const ui = {
     'intro.languageSwitchAlt': 'bandera de España',
 
     'about.description':
-      'Soy un apasionado de la informática en busca de emocionantes oportunidades para dar inicio a mi carrera profesional. Aunque carezco de experiencia laboral directa, he estado dedicando tiempo y esfuerzo a proyectos personales con el objetivo de mejorar mis habilidades tanto en desarrollo como en diseño web.',
+      'Soy desarrollador front-end autodidacta con experiencia construyendo aplicaciones y sitios web modernos usando tecnologías como React, TypeScript, Tailwind CSS y Next.js. Me enfoco en crear experiencias responsivas, accesibles y optimizadas para SEO.',
 
     'projects.imgAlt': 'captura de pantalla del proyecto',
     'projects.link': 'Ver más proyectos',
