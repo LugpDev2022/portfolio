@@ -78,13 +78,19 @@ p {
 .hidden-element {
   opacity: 0;
   transform: translateX(30%);
-  transition: all 750ms;
+  transition: none;
 }
 
 .show-element {
   opacity: 1;
   transform: translateX(0%);
   z-index: 0;
+}
+
+@media (min-width: 767px) {
+  .hidden-element {
+    transition: all 750ms;
+  }
 }
 
 @media (prefers-reduced-motion) {
