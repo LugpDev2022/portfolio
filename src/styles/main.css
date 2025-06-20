@@ -76,20 +76,22 @@ p {
 
 /* Scroll Animation */
 .hidden-element {
-  opacity: 0;
-  transform: translateX(30%);
-  transition: none;
-}
-
-.show-element {
   opacity: 1;
   transform: translateX(0%);
-  z-index: 0;
+  transition: none;
 }
 
 @media (min-width: 767px) {
   .hidden-element {
+    opacity: 0;
+    transform: translateX(30%);
     transition: all 750ms;
+  }
+
+  .show-element {
+    opacity: 1;
+    transform: translateX(0%);
+    z-index: 0;
   }
 }
 
