@@ -614,9 +614,9 @@
   integrity sha512-7VTgWzgMGvup6aSqDPLiW5zHaxYJGTO4OokMjIlrCtf+VpEL+cXKtCvg723iguPYI5oaUNdS+/V7OU2gvXVWEg==
 
 "@fontsource/playfair-display@^5.0.17":
-  version "5.0.18"
-  resolved "https://registry.yarnpkg.com/@fontsource/playfair-display/-/playfair-display-5.0.18.tgz#af2d9d5cb2565ca0915eb20bf136c797ba4b12f3"
-  integrity sha512-4O3y4FGCEE+vxDPxgsIHeRGWLLy9LJ49s5Dsf9OH3zEk5IF+5k2HltQePcQu9aG0zC9IuI32iaYkLMkg+6tX1g==
+  version "5.2.6"
+  resolved "https://registry.yarnpkg.com/@fontsource/playfair-display/-/playfair-display-5.2.6.tgz#5d5fb1516ead8b5aaacb9627d949d2f1b8f7f593"
+  integrity sha512-hWfFm2j+Dlg+UwabNJu5vi45otmLSG64hUzNFJ8pIDBgqWBviEPpVaDIZWHm2RYyIxhg9YXTPsZWdpvsu7fkqQ==
 
 "@fontsource/poppins@^5.0.8":
   version "5.2.6"
