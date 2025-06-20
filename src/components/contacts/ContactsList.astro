@@ -1,0 +1,24 @@
+---
+import { BsTwitterX } from 'react-icons/bs';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { TbBrandFiverr } from 'react-icons/tb';
+import ContactItem from './ContactItem.astro';
+---
+
+<ul class='flex items-center gap-7 mt-10 mb-14'>
+  <ContactItem href='https://mx.linkedin.com/in/luiscerv'>
+    <FaLinkedin size={30} aria-label='linkedin' />
+  </ContactItem>
+
+  <ContactItem href='https://github.com/LugpDev2022'>
+    <FaGithub size={30} aria-label='github' />
+  </ContactItem>
+
+  <ContactItem href='https://twitter.com/LugpDev2022'>
+    <BsTwitterX size={30} aria-label='twitter' />
+  </ContactItem>
+
+  <ContactItem href='https://www.fiverr.com/lugpdev2022'>
+    <TbBrandFiverr size={30} aria-label='fivver' />
+  </ContactItem>
+</ul>
