@@ -26,9 +26,10 @@ export const ui = {
     'skillset.libraries': 'Libraries',
     'skillset.tools': 'Tools',
 
+    'education.bs.1': 'B.S. in Computer Technologies',
+    'education.bs.2': '2025 - Present',
     'education.self-taught.1': 'Self-taught Education',
     'education.self-taught.2': '2021 - Present',
-
     'education.highschool.1': 'Highschool',
     'education.highschool.2': '2022 - 2025',
   },
@@ -51,6 +52,8 @@ export const ui = {
     'skillset.libraries': 'Librerías',
     'skillset.tools': 'Herramientas',
 
+    'education.bs.1': 'Ingeniería en Tecnologías Computacionales',
+    'education.bs.2': '2025 - Presente',
     'education.self-taught.1': 'Educación Autodidacta',
     'education.self-taught.2': '2021 - Presente',
     'education.highschool.1': 'Preparatoria',

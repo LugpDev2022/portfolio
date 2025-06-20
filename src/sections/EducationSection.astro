@@ -11,8 +11,12 @@ const t = useTranslations(lang);
     {t('intro.navigation.education')}
   </Subtitle>
 
-  <ul class='flex flex-col gap-2.5'>
-    <li><b>CS50x</b> | Harvard University | 2024</li>
+  <ul class='flex flex-col gap-2.5 text-pretty'>
+    <li>
+      <b>{t('education.bs.1')}</b> | Tecnológico de Monterrey | {
+        t('education.bs.2')
+      }
+    </li>
     <li>
       <b>{t('education.self-taught.1')}</b> | {t('education.self-taught.2')}
     </li>
