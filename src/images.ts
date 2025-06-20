@@ -10,6 +10,11 @@ import {
   SiTailwindcss,
   SiBootstrap,
   SiJest,
+  SiVercel,
+  SiVite,
+  SiNetlify,
+  SiGit,
+  SiPrisma,
 } from 'react-icons/si';
 
 import type { Skill } from '@/components/Skillset.astro';
@@ -64,4 +69,26 @@ export const frameworks: Skill[] = [
   },
 ];
 
-export const tools: string[] = ['vercel', 'vite', 'netlify', 'git', 'firebase'];
+export const tools: Skill[] = [
+  {
+    name: 'git',
+    icon: SiGit,
+  },
+  {
+    name: 'prisma',
+    icon: SiPrisma,
+  },
+  {
+    name: 'vite',
+    icon: SiVite,
+  },
+  {
+    name: 'vercel',
+    icon: SiVercel,
+  },
+
+  {
+    name: 'netlify',
+    icon: SiNetlify,
+  },
+];
