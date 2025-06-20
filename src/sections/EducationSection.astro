@@ -1,11 +1,9 @@
 ---
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import Subtitle from '@/components/Subtitle.astro';
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-
-
-import Subtitle from '../components/Subtitle.astro';
 ---
 
 <section class='mt-[70px] mb-5' id='education'>
@@ -16,10 +14,12 @@ import Subtitle from '../components/Subtitle.astro';
   <ul class='flex flex-col gap-2.5'>
     <li><b>CS50x</b> | Harvard University | 2024</li>
     <li>
-        <b>{t("education.self-taught.1")}</b> | {t("education.self-taught.2")} 
+      <b>{t('education.self-taught.1')}</b> | {t('education.self-taught.2')}
     </li>
     <li>
-       {t("education.highschool.1")} | <b>Tecnológico de Monterrey</b> | {t("education.highschool.2")} 
+      {t('education.highschool.1')} | <b>Tecnológico de Monterrey</b> | {
+        t('education.highschool.2')
+      }
     </li>
   </ul>
 </section>
