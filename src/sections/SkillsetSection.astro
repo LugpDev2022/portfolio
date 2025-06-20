@@ -1,13 +1,11 @@
 ---
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import Subtitle from '@/components/Subtitle.astro';
+import Skillset from '@/components/Skillset.astro';
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+import { languages, frameworks, tools } from '@/images';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-
-import Subtitle from '../components/Subtitle.astro';
-import Skillset from '../components/Skillset.astro';
-
-import { languages, frameworks, tools } from '../images';
 ---
 
 <section class='mt-[40px]' id='skillset'>
