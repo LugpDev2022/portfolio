@@ -8,8 +8,6 @@ export const showDefaultLang = false;
 
 export const ui = {
   en: {
-    'metadata.description':
-      "I'm passionate about software development, seeking exciting opportunities to start my professional career.",
     'metadata.ogImgAlt': 'Screenshot of my awesome portfolio.',
 
     'intro.navigation.about': 'About',
@@ -35,9 +33,8 @@ export const ui = {
     'education.highschool.2': '2022 - Present',
   },
   es: {
-    'metadata.description':
-      'Soy un apasionado de la informática en busca de emocionantes oportunidades para dar inicio a mi carrera profesional.',
     'metadata.ogImgAlt': 'Captura de pantalla de mi asombroso portafolio.',
+
     'intro.navigation.about': 'Sobre Mi',
     'intro.navigation.projects': 'Proyectos',
     'intro.navigation.skillset': 'Habilidades',
