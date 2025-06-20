@@ -30,7 +30,7 @@ export const ui = {
     'education.self-taught.2': '2021 - Present',
 
     'education.highschool.1': 'Highschool',
-    'education.highschool.2': '2022 - Present',
+    'education.highschool.2': '2022 - 2025',
   },
   es: {
     'metadata.ogImgAlt': 'Captura de pantalla de mi asombroso portafolio.',
@@ -54,6 +54,6 @@ export const ui = {
     'education.self-taught.1': 'Educación Autodidacta',
     'education.self-taught.2': '2021 - Presente',
     'education.highschool.1': 'Preparatoria',
-    'education.highschool.2': '2022 - Presente',
+    'education.highschool.2': '2022 - 2025',
   },
 } as const;
