@@ -11,11 +11,21 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: 'Pasari RPI',
+    image: '/images/projects/pasari.png',
+    description: {
+      en: 'Official website for Pasari, a student Formula SAE team. Features include team info, car designs, sponsors, results, filtering, multilingual support, and responsive design.',
+      es: 'Sitio web oficial del equipo Pasari, participante en Formula SAE. Incluye información del equipo, autos, patrocinadores, resultados, filtrado, soporte multilingüe y diseño responsivo.',
+    },
+    techStack: ['Astro', 'React', 'Tailwindcss', 'TypeScript'],
+    url: 'https://pasarirpi.com',
+  },
+  {
     title: 'Lugp.dev',
     image: '/images/projects/lugpdev.png',
     description: {
-      en: 'Personal blog to share guides, solutions, and insights related to web development and programming. Includes features such as search functionality, article publishing, and filtering by categories.',
-      es: 'Blog personal dedicado a compartir guías, soluciones y aprendizajes relacionados con el desarrollo web y la programación. El blog incluye funcionalidades como sistema de búsqueda, publicación de artículos y filtrado por categorías.',
+      en: 'Personal blog for web development guides and solutions. Includes search, publishing, and category filtering.',
+      es: 'Blog personal sobre desarrollo web. Incluye búsqueda, publicación y filtrado por categorías.',
     },
     techStack: ['Astro', 'TypeScript', 'Tailwindcss', 'Cypress'],
     url: 'https://lugpdev-blog.vercel.app',
@@ -24,8 +34,8 @@ export const projects: Project[] = [
     title: 'Nextflix',
     image: '/images/projects/nextflix.png',
     description: {
-      en: 'This project is a Netflix Clone built for educational purposes.',
-      es: 'Clon de Netflix creado con propósitos educativos.',
+      en: 'Netflix Clone built for educational purposes.',
+      es: 'Clon de Netflix con fines educativos.',
     },
     techStack: ['Nextjs', 'Prisma', 'Tailwind', 'Typescript'],
     url: 'https://nextflix-lugpdev.vercel.app/en/landing',
@@ -34,8 +44,8 @@ export const projects: Project[] = [
     title: 'Todo App',
     image: '/images/projects/todoApp.png',
     description: {
-      en: 'Web application designed for organizing your daily tasks effectively.',
-      es: 'Aplicación web diseñada para organizar tus tareas diarias de manera efectiva.',
+      en: 'Web app to organize daily tasks.',
+      es: 'Aplicación web para organizar tareas diarias.',
     },
     techStack: ['React', 'Bootstrap'],
     url: 'https://lugp-todo-app.netlify.app',
@@ -44,8 +54,8 @@ export const projects: Project[] = [
     title: 'Calculator',
     image: '/images/projects/calculator.png',
     description: {
-      en: 'Web calculator for helping you with mathematical operations. It has dark and light mode.',
-      es: 'Calculadora web para ayudarte con operaciones matemáticas. Cuenta con un modo oscuro y uno claro.',
+      en: 'Web calculator with dark and light mode.',
+      es: 'Calculadora web con modo oscuro y claro.',
     },
     techStack: ['React', 'Typescript', 'Tailwind', 'Vitest'],
     url: 'https://lugp-calculator.netlify.app/',
@@ -54,8 +64,8 @@ export const projects: Project[] = [
     title: 'Advice Generator',
     image: '/images/projects/adviceGenerator.png',
     description: {
-      en: 'Get some of the best advices with this web application.',
-      es: 'Accede a los mejores consejos con esta aplicación web.',
+      en: 'Web app to get advice.',
+      es: 'Aplicación web para obtener consejos.',
     },
     techStack: ['React', 'Bootstrap'],
     url: 'https://advice-generator-lugpdev2022.netlify.app/',
