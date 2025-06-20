@@ -8,11 +8,10 @@ export type Skill = {
 
 interface Props {
   skills: Skill[];
-  path: string;
   className?: string;
 }
 
-const { skills, path, className = '' } = Astro.props;
+const { skills, className = '' } = Astro.props;
 ---
 
 <section

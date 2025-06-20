@@ -2,7 +2,7 @@
 import Subtitle from '@/components/Subtitle.astro';
 import Skillset from '@/components/Skillset.astro';
 import { getLangFromUrl, useTranslations } from '@/i18n/utils';
-import { frameworks, tools, languages } from '@/images';
+import { frameworks, tools, languages } from '@/assets/content/skills';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -14,16 +14,11 @@ const t = useTranslations(lang);
   </Subtitle>
 
   <div class='max-w-full'>
-    <Skillset
-      path='/images/languages'
-      skills={languages}
-      className='flex justify-around'
-    >
+    <Skillset skills={languages} className='flex justify-around'>
       {t('skillset.languages')}
     </Skillset>
 
     <Skillset
-      path='/images/frameworks'
       skills={frameworks}
       className='grid grid-cols-3 sm:grid-cols-6 sm:px-8 gap-8 lg:gap-4 justify-items-center'
     >
@@ -32,11 +27,7 @@ const t = useTranslations(lang);
       >
     </Skillset>
 
-    <Skillset
-      path='/images/tools'
-      skills={tools}
-      className='flex justify-around'
-    >
+    <Skillset skills={tools} className='flex justify-around'>
       {t('skillset.tools')}
     </Skillset>
   </div>
