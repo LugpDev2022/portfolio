@@ -4,19 +4,17 @@ import {
   SiHtml5,
   SiCss3,
   SiSass,
+  SiReact,
+  SiNextdotjs,
+  SiAstro,
+  SiTailwindcss,
+  SiBootstrap,
+  SiJest,
 } from 'react-icons/si';
 
 import type { Skill } from '@/components/Skillset.astro';
 
-export const languages: string[] = [
-  'html',
-  'javascript',
-  'css',
-  'typescript',
-  'sass',
-];
-
-export const languagesWithIcons: Skill[] = [
+export const languages: Skill[] = [
   {
     name: 'html',
     icon: SiHtml5,
@@ -39,13 +37,31 @@ export const languagesWithIcons: Skill[] = [
   },
 ];
 
-export const frameworks: string[] = [
-  'react',
-  'nextjs',
-  'astro',
-  'tailwind',
-  'bootstrap',
-  'jest',
+export const frameworks: Skill[] = [
+  {
+    name: 'react',
+    icon: SiReact,
+  },
+  {
+    name: 'nextjs',
+    icon: SiNextdotjs,
+  },
+  {
+    name: 'astro',
+    icon: SiAstro,
+  },
+  {
+    name: 'tailwind',
+    icon: SiTailwindcss,
+  },
+  {
+    name: 'bootstrap',
+    icon: SiBootstrap,
+  },
+  {
+    name: 'jest',
+    icon: SiJest,
+  },
 ];
 
 export const tools: string[] = ['vercel', 'vite', 'netlify', 'git', 'firebase'];
