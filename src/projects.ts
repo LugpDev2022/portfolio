@@ -11,6 +11,16 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: 'Lugp.dev',
+    image: '/images/projects/lugpdev.png',
+    description: {
+      en: 'Personal blog to share guides, solutions, and insights related to web development and programming. Includes features such as search functionality, article publishing, and filtering by categories.',
+      es: 'Blog personal dedicado a compartir guías, soluciones y aprendizajes relacionados con el desarrollo web y la programación. El blog incluye funcionalidades como sistema de búsqueda, publicación de artículos y filtrado por categorías.',
+    },
+    techStack: ['Astro', 'TypeScript', 'Tailwindcss', 'Cypress'],
+    url: 'https://lugpdev-blog.vercel.app',
+  },
+  {
     title: 'Nextflix',
     image: '/images/projects/nextflix.png',
     description: {
@@ -59,25 +69,5 @@ export const projects: Project[] = [
     },
     techStack: ['React', 'Bootstrap', 'Redux', 'Jest'],
     url: 'https://time-app-lugpdev2022.netlify.app/',
-  },
-  {
-    title: 'News Page',
-    image: '/images/projects/news-page.png',
-    description: {
-      en: 'Homepage of a news website.',
-      es: 'Pagina de inicio de un sitio web de noticias.',
-    },
-    techStack: ['Astro', 'Bootstrap', 'Sass'],
-    url: 'https://news-page-lugpdev2022.netlify.app/',
-  },
-  {
-    title: '404 Not Found',
-    image: '/images/projects/not-found.png',
-    description: {
-      en: 'Typical 404 Not Found page.',
-      es: 'Página típica de error 404 No Encontrado.',
-    },
-    techStack: ['Astro', 'Tailwind', 'Css'],
-    url: 'https://lugp-not-found.netlify.app/',
   },
 ];
