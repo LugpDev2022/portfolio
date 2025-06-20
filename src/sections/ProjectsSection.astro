@@ -15,8 +15,7 @@ const t = useTranslations(lang);
     {t('intro.navigation.projects')}
   </Subtitle>
 
-  <!-- TODO: Translate projects description -->
-  <div class='flex flex-col gap-5 mt-5 max-w-full overflow-hidden'>
+  <div class='flex flex-col gap-5 mt-5 w-full'>
     {
       projects.map((project, i) => (
         <Project {...project} lazy={i >= 2} index={i} />
