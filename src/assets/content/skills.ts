@@ -21,20 +21,20 @@ import type { Skill } from '@/components/Skillset.astro';
 
 export const languages: Skill[] = [
   {
-    name: 'html',
-    icon: SiHtml5,
-  },
-  {
     name: 'javascript',
     icon: SiJavascript,
   },
   {
-    name: 'css',
-    icon: SiCss3,
-  },
-  {
     name: 'typescript',
     icon: SiTypescript,
+  },
+  {
+    name: 'html',
+    icon: SiHtml5,
+  },
+  {
+    name: 'css',
+    icon: SiCss3,
   },
   {
     name: 'sass',
