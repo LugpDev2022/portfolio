@@ -1,21 +1,19 @@
 ---
-import { getLangFromUrl, useTranslations } from '../../i18n/utils';
-
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
 import { MdOutlineArrowOutward } from 'react-icons/md';
 
 import ProjectTitle from './ProjectTitle';
-import type { Project as ProjectType } from '../../projects';
-
+import type { Project as ProjectType } from '@/projects';
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 
 interface Props extends ProjectType {
   lazy?: boolean;
   index: number;
 }
 
-const { title, image, description, techStack, url, lazy, index }: Props =
-  Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const { title, image, description, techStack, url, lazy }: Props = Astro.props;
 ---
 
 <div class='sm:order-2'>
