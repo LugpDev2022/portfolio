@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { FaFileArrowDown } from 'react-icons/fa6';
 
 import ContactItem from './ContactItem.astro';
-import { getLangFromUrl } from '../../i18n/utils';
+import { getLangFromUrl } from '@/i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const cv = lang === 'es' ? '/files/cv-es.pdf' : '/files/cv-en.pdf';
