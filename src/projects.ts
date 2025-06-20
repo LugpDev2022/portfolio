@@ -11,6 +11,22 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: 'VASI',
+    image: '/images/projects/vasi.png',
+    description: {
+      en: 'Web app with AI-generated quizzes for learning multiple subjects.',
+      es: 'App web con quizzes personalizados por IA para aprender diversas materias.',
+    },
+    techStack: [
+      'Nextjs',
+      'TypeScript',
+      'Prisma',
+      'Tailwindcss',
+      'Vercel AI SDK',
+    ],
+    url: 'https://vasi.vercel.app',
+  },
+  {
     title: 'Pasari RPI',
     image: '/images/projects/pasari.png',
     description: {
