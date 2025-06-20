@@ -18,7 +18,7 @@ import { projects } from '../projects';
   </Subtitle>
 
   <!-- TODO: Translate projects description -->
-  <div class='flex flex-col gap-5 mt-5 max-w-[100%] overflow-hidden'>
+  <div class='flex flex-col gap-5 mt-5 max-w-full overflow-hidden'>
     {
       projects.map((project, i) => (
         <Project {...project} lazy={i >= 2} index={i} />
