@@ -1,5 +1,10 @@
 ---
+import { Image } from 'astro:assets';
+
 import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+
+import esFlag from '@images/flags/es.png';
+import enFlag from '@images/flags/en.png';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -9,8 +14,8 @@ const t = useTranslations(lang);
   href={`/${lang === 'es' ? '' : 'es'}`}
   class='inline-flex gap-[25px] px-[15px] py-[10px] border border-cyan-300 rounded-full my-8 hover:text-cyan-300 transition'
 >
-  <img
-    src={`/images/flags/${lang}.png`}
+  <Image
+    src={lang === 'es' ? esFlag : enFlag}
     class={`${lang === 'es' ? 'order-2' : ''} w-[28px]`}
     alt={t('intro.languageSwitchAlt') as string}
   />
