@@ -1,7 +1,12 @@
 ---
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import ContactItem from './ContactItem.astro';
 import { FaFileArrowDown } from 'react-icons/fa6';
+
+import ContactItem from './ContactItem.astro';
+import { getLangFromUrl } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const cv = lang === 'es' ? '/files/cv-es.pdf' : '/files/cv-en.pdf';
 ---
 
 <ul class='flex items-center gap-7 mt-10 mb-14'>
@@ -13,7 +18,7 @@ import { FaFileArrowDown } from 'react-icons/fa6';
     <FaGithub size={30} aria-label='github' />
   </ContactItem>
 
-  <ContactItem href='/files/cv-es.pdf'>
+  <ContactItem href={cv}>
     <FaFileArrowDown size={30} aria-label='curriculum vitae' />
   </ContactItem>
 </ul>
