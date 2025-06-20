@@ -1,6 +1,17 @@
+import type { ImageMetadata } from 'astro';
+
+import vasiImage from '@images/projects/vasi.png';
+import pasariImage from '@images/projects/pasari.png';
+import lugpdevImage from '@images/projects/lugpdev.png';
+import nextflixImage from '@images/projects/nextflix.png';
+import todoAppImage from '@images/projects/todoApp.png';
+import calculatorImage from '@images/projects/calculator.png';
+import adviceGeneratorImage from '@images/projects/adviceGenerator.png';
+import timeAppImage from '@images/projects/timeApp.png';
+
 export interface Project {
   title: string;
-  image: string;
+  image: ImageMetadata;
   description: {
     en: string;
     es: string;
@@ -12,7 +23,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     title: 'VASI',
-    image: '/images/projects/vasi.png',
+    image: vasiImage,
     description: {
       en: 'Web app with AI-generated quizzes for learning multiple subjects.',
       es: 'App web con quizzes personalizados por IA para aprender diversas materias.',
@@ -28,7 +39,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Pasari RPI',
-    image: '/images/projects/pasari.png',
+    image: pasariImage,
     description: {
       en: 'Official website for Pasari, a student Formula SAE team. Features include team info, car designs, sponsors, results, filtering, multilingual support, and responsive design.',
       es: 'Sitio web oficial del equipo Pasari, participante en Formula SAE. Incluye información del equipo, autos, patrocinadores, resultados, filtrado, soporte multilingüe y diseño responsivo.',
@@ -38,7 +49,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Lugp.dev',
-    image: '/images/projects/lugpdev.png',
+    image: lugpdevImage,
     description: {
       en: 'Personal blog for web development guides and solutions. Includes search, publishing, and category filtering.',
       es: 'Blog personal sobre desarrollo web. Incluye búsqueda, publicación y filtrado por categorías.',
@@ -48,7 +59,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Nextflix',
-    image: '/images/projects/nextflix.png',
+    image: nextflixImage,
     description: {
       en: 'Netflix Clone built for educational purposes.',
       es: 'Clon de Netflix con fines educativos.',
@@ -58,7 +69,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Todo App',
-    image: '/images/projects/todoApp.png',
+    image: todoAppImage,
     description: {
       en: 'Web app to organize daily tasks.',
       es: 'Aplicación web para organizar tareas diarias.',
@@ -68,7 +79,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Calculator',
-    image: '/images/projects/calculator.png',
+    image: calculatorImage,
     description: {
       en: 'Web calculator with dark and light mode.',
       es: 'Calculadora web con modo oscuro y claro.',
@@ -78,7 +89,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Advice Generator',
-    image: '/images/projects/adviceGenerator.png',
+    image: adviceGeneratorImage,
     description: {
       en: 'Web app to get advice.',
       es: 'Aplicación web para obtener consejos.',
@@ -88,7 +99,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Time App',
-    image: '/images/projects/timeApp.png',
+    image: timeAppImage,
     description: {
       en: 'Small app for basic time tasks like watching the hour and creating timers.',
       es: 'Aplicación sencilla para tareas básicas relacionadas con el tiempo, como ver la hora y crear temporizadores.',
